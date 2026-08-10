@@ -7,7 +7,7 @@ pre: " <b> 4. </b> "
 ---
 
 ### [Event 1](4.1-Event1/)
-&emsp;**Tên sự kiện:** Event Cloud Architect
+&emsp;**Tên sự kiện:** FCAJ Community Day - June 2026
 
 &emsp;**Thời gian:** 09:00 ngày 20/06/2026
 
@@ -18,7 +18,7 @@ pre: " <b> 4. </b> "
 
 
 ### [Event 2](4.2-Event2/)
-&emsp;**Tên sự kiện:** Chung kết Event Cloud Architect
+&emsp;**Tên sự kiện:** AWS: Enterprise Cloud Architectures and Industry Application
 
 &emsp;**Thời gian:** 09:00 ngày 11/07/2026
 
@@ -29,7 +29,7 @@ pre: " <b> 4. </b> "
 
 
 ### [Event 3](4.3-Event3/)
-&emsp;**Tên sự kiện:** Agent Forge - Deepdive Day 1
+&emsp;**Tên sự kiện:** FCAJ x Agentic AI Build Week
 
 &emsp;**Thời gian:** 09:00 ngày 01/08/2026
 

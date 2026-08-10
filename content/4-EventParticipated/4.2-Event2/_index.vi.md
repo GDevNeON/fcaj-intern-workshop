@@ -1,121 +1,56 @@
 ---
 title: "Event 2"
-date: 2024-01-01
+date: 2026-07-11
 weight: 2
 chapter: false
 pre: " <b> 4.2. </b> "
 ---
 
-# Bài thu hoạch “Chung kết Event Cloud Architect”
+# Báo cáo bài thu hoạch: "AWS: Enterprise Cloud Architectures and Industry Application featuring Cloud Kinetics & Renova Cloud"
 
-### Mục Đích Của Sự Kiện
+### Mục tiêu sự kiện
+* Nắm bắt được những kiến thức thực tế về việc triển khai kiến trúc đám mây cho doanh nghiệp (enterprise cloud architecture).
+* Khám phá vai trò của Điện toán đám mây (Cloud Computing) và AI trong các giải pháp chuyên ngành (industry-specific).
+* Hiểu rõ định hướng phát triển nghề nghiệp và xu hướng ngành dành cho Kỹ sư Đám mây/Dữ liệu (Cloud/Data Engineers).
+* Học hỏi các chiến lược hiện đại hóa hệ thống cũ và xây dựng nền tảng dữ liệu có khả năng mở rộng.
 
-- Chia sẻ best practices trong thiết kế ứng dụng hiện đại
-- Giới thiệu phương pháp DDD và event-driven architecture
-- Hướng dẫn lựa chọn compute services phù hợp
-- Giới thiệu công cụ AI hỗ trợ development lifecycle
+### Diễn giả & Khách mời
+* *Nguyễn Gia Hưng* – Head of Solution Architect tại AWS Vietnam, Người sáng lập First Cloud AI Journey (FCAJ)
+* *Bành Cẩm Vĩnh* – Data Engineer, AWS Community Builder
+* *Khang Nguyễn* – Solution Architect tại Cloud Kinetics
 
-### Danh Sách Diễn Giả
+### Điểm nhấn sự kiện
+* **Sự tiến hóa và chiến lược ngành**
+    * Sự chuyển dịch từ tập trung vào vai trò (role-based) sang tập trung vào ngành nghề (industry-based) trong sự nghiệp Cloud.
+    * Tầm quan trọng của "Local Talent, Global Bucket" — đầu tư vào nguồn nhân lực địa phương cho các dự án quy mô toàn cầu.
+    * Đầu tư hạ tầng quy mô lớn (CDN, local zones) tại Việt Nam nhằm hỗ trợ các yêu cầu độ trễ thấp như Core Banking.
+* **Modern Data Engineering (Kỹ thuật dữ liệu hiện đại)**
+    * DNA của một Nền tảng Dữ liệu (Data Platform): Thu thập (Injection), Xử lý (Processing), Lưu trữ (Storage), Quản trị (Governance), Danh mục (Catalog), và Phân tích (Analytics).
+    * Vượt ra khỏi các công cụ kỹ thuật: Hiểu rõ nghiệp vụ (business domain) là yếu tố then chốt để tạo ra giá trị.
+    * Các case study từ startup đến các doanh nghiệp lớn (như Heineken), nhấn mạnh sự cân bằng giữa tốc độ và tính chuẩn xác của kiến trúc.
+* **Tác động của AI đối với phát triển phần mềm**
+    * Tận dụng AI để tự động tạo mã (code generation) và thiết kế kiến trúc, nhưng vẫn nhấn mạnh vai trò của con người trong việc kiểm chứng kết quả (validating output).
+    * AI là một công cụ khuếch đại: Nâng cao năng suất nhưng đòi hỏi nền tảng kiến thức vững chắc để tránh tình trạng "garbage in, garbage out" (đầu vào sai thì đầu ra cũng sai).
+* **Nghề nghiệp và Tư duy**
+    * Tinh thần "Builder": Phát triển sự kiên cường, kỹ năng giao tiếp và khả năng kết nối giữa yêu cầu kinh doanh và yêu cầu kỹ thuật.
+    * Học tập không ngừng: Không chỉ chú trọng vào mức lương khởi điểm; hãy tập trung vào sự phát triển dài hạn và tích lũy kỹ năng.
 
-- **Jignesh Shah** - Director, Open Source Databases
-- **Erica Liu** - Sr. GTM Specialist, AppMod
-- **Fabrianne Effendi** - Assc. Specialist SA, Serverless Amazon Web Services
+### Những bài học rút ra
+* **Tư duy Thiết kế (Design Mindset):** Luôn bắt đầu từ bài toán kinh doanh (business problem) trước khi lựa chọn giải pháp kỹ thuật.
+* **Kiến trúc Kỹ thuật (Technical Architecture):** Tính nhất quán trong "DNA kiến trúc" quan trọng hơn việc lựa chọn một công cụ cụ thể, vì công cụ thay đổi rất nhanh.
+* **Chiến lược Hiện đại hóa (Modernization Strategy):** Sử dụng phương pháp tiếp cận theo từng giai đoạn, có đo lường thay vì thiết kế hệ thống quá mức cần thiết (over-engineering) ngay từ ngày đầu.
+* **Áp dụng vào Công việc:** Sử dụng các công cụ AI để tăng năng suất, nhưng vẫn phải làm chủ các quyết định thiết kế và kiến trúc.
 
-### Nội Dung Nổi Bật
+### Trải nghiệm tại sự kiện
+Việc tham dự phiên thảo luận này đã mang lại cái nhìn toàn diện về sự giao thoa giữa kiến trúc kỹ thuật và ứng dụng công nghiệp. Những điểm ấn tượng bao gồm:
+* **Học hỏi từ chuyên gia:** Đạt được những góc nhìn sâu sắc về cách các doanh nghiệp lớn—được hỗ trợ bởi *Renova Cloud* và *Cloud Kinetics*—quản lý sự phức tạp của hệ thống.
+* **Kiến thức thực tiễn:** Nhận ra rằng giao tiếp là một kỹ năng kỹ thuật—việc dịch các thuật ngữ kinh doanh (ví dụ: "active users") thành thông số kỹ thuật là vô cùng quan trọng.
+* **Định hướng nghề nghiệp:** Hiểu rằng thị trường việc làm hiện tại cho sinh viên mới ra trường là rất cạnh tranh, đòi hỏi sinh viên phải vượt ra khỏi những bài hướng dẫn (tutorials) cơ bản để xây dựng các dự án thực tế (production-ready).
 
-#### Đưa ra các ảnh hưởng tiêu cực của kiến trúc ứng dụng cũ
+### Bài học kinh nghiệm
+* Đừng ngại bắt đầu áp dụng AI ở quy mô nhỏ, nhưng hãy luôn kiểm chứng kết quả với tài liệu chính thức (official documentation).
+* Sự kiên cường là chìa khóa: Xử lý áp lực và phản hồi trong môi trường chuyên nghiệp cũng quan trọng như khả năng lập trình kỹ thuật.
+* Xây dựng mối quan hệ (networking) thông qua các cộng đồng như *First Cloud AI Journey* là một đòn bẩy mạnh mẽ cho sự nghiệp.
 
-- Thời gian release sản phẩm lâu → Mất doanh thu/bỏ lỡ cơ hội
-- Hoạt động kém hiệu quả → Mất năng suất, tốn kém chi phí
-- Không tuân thủ các quy định về bảo mật → Mất an ninh, uy tín
-
-#### Chuyển đổi sang kiến trúc ứng dụng mới - Microservice Architecture
-
-Chuyển đổi thành hệ thống modular – từng chức năng là một **dịch vụ độc lập** giao tiếp với nhau qua **sự kiện** với 3 trụ cột cốt lõi:
-
-- **Queue Management**: Xử lý tác vụ bất đồng bộ
-- **Caching Strategy:** Tối ưu performance
-- **Message Handling:** Giao tiếp linh hoạt giữa services
-
-#### Domain-Driven Design (DDD)
-
-- **Phương pháp 4 bước**: Xác định domain events → sắp xếp timeline → identify actors → xác định bounded contexts
-- **Case study bookstore**: Minh họa cách áp dụng DDD thực tế
-- **Context mapping**: 7 patterns tích hợp bounded contexts
-
-#### Event-Driven Architecture
-
-- **3 patterns tích hợp**: Publish/Subscribe, Point-to-point, Streaming
-- **Lợi ích**: Loose coupling, scalability, resilience
-- **So sánh sync vs async**: Hiểu rõ trade-offs (sự đánh đổi)
-
-#### Compute Evolution
-
-- **Shared Responsibility Model**: Từ EC2 → ECS → Fargate → Lambda
-- **Serverless benefits**: No server management, auto-scaling, pay-for-value
-- **Functions vs Containers**: Criteria lựa chọn phù hợp
-
-#### Amazon Q Developer
-
-- **SDLC automation**: Từ planning đến maintenance
-- **Code transformation**: Java upgrade, .NET modernization
-- **AWS Transform agents**: VMware, Mainframe, .NET migration
-
-### Những Gì Học Được
-
-#### Tư Duy Thiết Kế
-
-- **Business-first approach**: Luôn bắt đầu từ business domain, không phải technology
-- **Ubiquitous language**: Importance của common vocabulary giữa business và tech teams
-- **Bounded contexts**: Cách identify và manage complexity trong large systems
-
-#### Kiến Trúc Kỹ Thuật
-
-- **Event storming technique**: Phương pháp thực tế để mô hình hóa quy trình kinh doanh
-- Sử dụng **Event-driven communication** thay vì synchronous calls
-- **Integration patterns**: Hiểu khi nào dùng sync, async, pub/sub, streaming
-- **Compute spectrum**: Criteria chọn từ VM → containers → serverless
-
-#### Chiến Lược Hiện Đại Hóa
-
-- **Phased approach**: Không rush, phải có roadmap rõ ràng
-- **7Rs framework**: Nhiều con đường khác nhau tùy thuộc vào đặc điểm của mỗi ứng dụng
-- **ROI measurement**: Cost reduction + business agility
-
-### Ứng Dụng Vào Công Việc
-
-- **Áp dụng DDD** cho project hiện tại: Event storming sessions với business team
-- **Refactor microservices**: Sử dụng bounded contexts để identify service boundaries
-- **Implement event-driven patterns**: Thay thế một số sync calls bằng async messaging
-- **Serverless adoption**: Pilot AWS Lambda cho một số use cases phù hợp
-- **Try Amazon Q Developer**: Integrate vào development workflow để boost productivity
-
-### Trải nghiệm trong event
-
-Tham gia workshop **“GenAI-powered App-DB Modernization”** là một trải nghiệm rất bổ ích, giúp tôi có cái nhìn toàn diện về cách hiện đại hóa ứng dụng và cơ sở dữ liệu bằng các phương pháp và công cụ hiện đại. Một số trải nghiệm nổi bật:
-
-#### Học hỏi từ các diễn giả có chuyên môn cao
-- Các diễn giả đến từ AWS và các tổ chức công nghệ lớn đã chia sẻ **best practices** trong thiết kế ứng dụng hiện đại.
-- Qua các case study thực tế, tôi hiểu rõ hơn cách áp dụng **Domain-Driven Design (DDD)** và **Event-Driven Architecture** vào các project lớn.
-
-#### Trải nghiệm kỹ thuật thực tế
-- Tham gia các phiên trình bày về **event storming** giúp tôi hình dung cách **mô hình hóa quy trình kinh doanh** thành các domain events.
-- Học cách **phân tách microservices** và xác định **bounded contexts** để quản lý sự phức tạp của hệ thống lớn.
-- Hiểu rõ trade-offs giữa **synchronous và asynchronous communication** cũng như các pattern tích hợp như **pub/sub, point-to-point, streaming**.
-
-#### Ứng dụng công cụ hiện đại
-- Trực tiếp tìm hiểu về **Amazon Q Developer**, công cụ AI hỗ trợ SDLC từ lập kế hoạch đến maintenance.
-- Học cách **tự động hóa code transformation** và pilot serverless với **AWS Lambda**, từ đó nâng cao năng suất phát triển.
-
-#### Kết nối và trao đổi
-- Workshop tạo cơ hội trao đổi trực tiếp với các chuyên gia, đồng nghiệp và team business, giúp **nâng cao ngôn ngữ chung (ubiquitous language)** giữa business và tech.
-- Qua các ví dụ thực tế, tôi nhận ra tầm quan trọng của **business-first approach**, luôn bắt đầu từ nhu cầu kinh doanh thay vì chỉ tập trung vào công nghệ.
-
-#### Bài học rút ra
-- Việc áp dụng DDD và event-driven patterns giúp giảm **coupling**, tăng **scalability** và **resilience** cho hệ thống.
-- Chiến lược hiện đại hóa cần **phased approach** và đo lường **ROI**, không nên vội vàng chuyển đổi toàn bộ hệ thống.
-- Các công cụ AI như Amazon Q Developer có thể **boost productivity** nếu được tích hợp vào workflow phát triển hiện tại.
-
-#### Một số hình ảnh khi tham gia sự kiện
-* Thêm các hình ảnh của các bạn tại đây
-> Tổng thể, sự kiện không chỉ cung cấp kiến thức kỹ thuật mà còn giúp tôi thay đổi cách tư duy về thiết kế ứng dụng, hiện đại hóa hệ thống và phối hợp hiệu quả hơn giữa các team.
+### Một số hình ảnh sự kiện
+![AWS Enterprise Cloud Architectures](/images/fcaj-02.jpg)
