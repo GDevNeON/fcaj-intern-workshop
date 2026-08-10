@@ -34,7 +34,7 @@ Hệ thống được tổ chức theo năm lớp chính:
 ### Nội dung
 
 1. [Tổng quan Workshop](5.1-Workshop-overview/)
-2. [Chuẩn bị](5.2-Prerequiste/)
+2. [Chuẩn bị](5.2-Prerequisite/)
 3. [Thiết kế và xây dựng hạ tầng NeonFoodMap trên AWS](5.3-Neon-Infrastructure/)
 4. [Triển khai NeonFoodMap trên AWS](5.4-Neon-Deployment/)
 5. [Kiểm thử, vận hành và triển khai liên tục](5.5-Neon-Operations/)

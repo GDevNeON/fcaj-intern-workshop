@@ -7,7 +7,7 @@ pre: " <b> 3. </b> "
 ---
 
 ###  [Blog 1 - KIRO POWERS](3.1-Blog1/)
-This blog introduces the Powers feature in Amazon Kiro, which allows you to package all the tools, guides, and automation into a single unit and share it with the entire team instead of manually configuring it every time a new project starts. This is an step forward that allow the team use the same AI setup, while also addressing the problem of wasted tokens and reduced AI focus.
+This blog introduces the Powers feature in Amazon Kiro, which allows you to package all the tools, guides, and automation into a single unit and share it with the entire team instead of manually configuring it every time a new project starts. This is a step forward that allows the team to use the same AI setup, while also addressing the problem of wasted tokens and reduced AI focus.
 
 
 ###  [Blog 2 - AMAZON RDS AUTOMATION ON SCHEDULE](3.2-Blog2/)

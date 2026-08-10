@@ -34,7 +34,7 @@ The system is structured into five layers:
 ### Contents
 
 1. [Workshop Overview](5.1-Workshop-overview/)
-2. [Prerequisites](5.2-Prerequiste/)
+2. [Prerequisites](5.2-Prerequisite/)
 3. [Design and Build NeonFoodMap Infrastructure on AWS](5.3-Neon-Infrastructure/)
 4. [NeonFoodMap Deployment on AWS](5.4-Neon-Deployment/)
 5. [NeonFoodMap Operations and Monitoring](5.5-Neon-Operations/)

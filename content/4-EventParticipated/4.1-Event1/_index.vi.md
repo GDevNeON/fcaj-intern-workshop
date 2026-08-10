@@ -1,6 +1,6 @@
 ---
 title: "Event 1"
-date: 2026-06-20
+date: 2026-06-13
 weight: 1
 chapter: false
 pre: " <b> 4.1. </b> "
@@ -16,7 +16,7 @@ Tham gia cộng đồng *First Cloud Journey (FCAJ)* để cập nhật kiến t
 *   **Nghị Danh** (Renova Cloud): Chuyên gia về Voice AI và kiến trúc Voice AI.
 *   **Toàn Nguyễn** (AWS Security Builder): Chuyên gia về bảo mật trong kiến trúc Cloud và MCP Server.
 
-### 3. Nội Dung Nổi kết
+### 3. Nội Dung Nổi bật
 *   **Thách thức của hạ tầng cũ:** Việc vận hành thủ công (manage server) gây lãng phí nguồn lực, độ phức tạp cao, và rủi ro lớn khi hệ thống mở rộng.
 *   **Modernization với AI Agents:**
     *   Áp dụng *Multi-agent architecture* để giải quyết các bài toán phức tạp (Incident management, FinOps, Security testing).

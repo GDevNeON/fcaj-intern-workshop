@@ -68,6 +68,11 @@ a:hover {
 
 #sidebar ul li.visited > a .read-icon {
   color: var(--MENU-VISITED-color);
+  display: inline-block;
+}
+
+#sidebar ul li.active > a .read-icon {
+  display: none !important;
 }
 
 #sidebar #footer {

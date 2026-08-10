@@ -27,7 +27,7 @@ Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, l�
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?
 
-    Điều em hài lòng nhất trong thời gian thực tập là có cơ hội tiếp cận quy trình triển khai phần mềm theo mô hình DevOps trên nền tảng AWS. Bên cạnh đó, môi trường làm việc chuyên nghiệp, cởi mở và luôn khuyến khích học hỏi đã giúp em tự tự tin hơn trong việc nghiên cứu, giải quyết vấn đề và phát triển bản thân.
+    Điều em hài lòng nhất trong thời gian thực tập là có cơ hội tiếp cận quy trình triển khai phần mềm theo mô hình DevOps trên nền tảng AWS. Bên cạnh đó, môi trường làm việc chuyên nghiệp, cởi mở và luôn khuyến khích học hỏi đã giúp em tự tin hơn trong việc nghiên cứu, giải quyết vấn đề và phát triển bản thân.
 
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?
     
