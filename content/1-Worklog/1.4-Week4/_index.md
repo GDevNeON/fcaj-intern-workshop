@@ -6,30 +6,25 @@ chapter: false
 pre: " <b> 1.4. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 ### Week 4 Objectives:
 
-- Complete the assigned AWS-003 task according to the Sprint 1 plan.
-- Deploy and configure the required AWS resources according to the task requirements.
-- Verify the resources after deployment and update the implementation documentation accordingly.
+- SPRINT 1: Foundation & Infrastructure.
+- DevOps & Integration, build AWS foundation (VPC, RDS, S3, ECR, IAM).
 
 ### Tasks to be carried out this week:
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Review Task AWS-003 requirements <br> - Study the related AWS documentation and architecture context | 13/07/2026 | 13/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 3 | - Deploy the required AWS resources <br> - Configure the necessary settings through the AWS Management Console | 14/07/2026 | 14/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 4 | - Test the deployed resources <br> - Troubleshoot configuration issues and adjust parameters if needed | 15/07/2026 | 15/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 5 | - Re-test the solution after configuration changes <br> - Compare the outcomes with the acceptance criteria of AWS-003 | 16/07/2026 | 16/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
-| 6 | - Complete the deployment documentation <br> - Report findings to the supervisor and prepare the next sprint tasks | 17/07/2026 | 17/07/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 2 | - Setup VPC Multi-AZ (Public/Private subnets, IGW, NAT) | 13/07/2026 | 13/07/2026 | |
+| 3 | - Provision RDS MySQL in private subnet | 14/07/2026 | 14/07/2026 | |
+| 4 | - Setup S3 Buckets, Lifecycle rules, and IAM Roles via CloudFormation | 15/07/2026 | 15/07/2026 | |
+| 5 | - Dockerize Frontend & Backend applications | 16/07/2026 | 16/07/2026 | |
+| 6 | - Setup ECR and push Docker Images | 17/07/2026 | 17/07/2026 | |
 
 ### Week 4 Achievements:
 
-- Completed the deployment and configuration of Task AWS-003 according to the project plan.
-- Gained practical experience in implementing and validating AWS resources.
-- Verified that the deployed resources functioned as expected after testing.
-- Produced documentation describing the implementation steps and observed results.
-- Prepared a stable foundation for continuing the next sprint tasks.
+- Completed SPRINT 1 by successfully deploying the foundational Multi-AZ VPC architecture, properly segregating Public/Private subnets, IGW, and NAT Gateway.
+- Provisioned and secured Amazon RDS MySQL inside a Private Subnet, ensuring network-level data isolation and security.
+- Configured dedicated S3 Buckets (for Frontend, Media, Audio, and Logs) along with Lifecycle policies to optimize long-term storage costs.
+- Utilized CloudFormation to automate the creation of IAM Roles and enforced strict IAM security best practices.
+- Finalized Dockerfiles for the Frontend and Backend applications, and successfully pushed the container images to Amazon ECR.

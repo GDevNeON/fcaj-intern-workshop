@@ -6,22 +6,22 @@ chapter : false
 pre : " <b> 5.4.2. </b> "
 ---
 
-### 5.4.2. Fetch and Configure GitHub Actions Workflow
+## Fetch and Configure GitHub Actions Workflow
 
 The project's CI/CD pipeline is fully automated using GitHub Actions. The workflow configuration file orchestrates tasks ranging from code testing, container image packaging, pushing to AWS ECR, and automated deployment to Amazon ECS.
 
-#### 1. Retrieve the Workflow File
+### 5.4.2.1. Retrieve the Workflow File
 Access the project's GitHub repository to view/download the workflow file:
 - **Path**: `.github/workflows/deploy.yml`
 - **Reference Link**: [GitHub Actions deploy.yml](https://github.com/HaoWasabi/NeonFoodmap/blob/main/.github/workflows/deploy.yml)
 
 ---
 
-#### 2. Pipeline Job Breakdown
+### 5.4.2.2. Pipeline Job Breakdown
 
 The pipeline consists of 6 core sequential/parallel Jobs:
 
-##### Job 1: `backend-test` — Backend Lint & Unit Test
+#### Job 1: `backend-test` — Backend Lint & Unit Test
 | Item | Details |
 | :--- | :--- |
 | **Trigger** | Any Push/PR modifying source files in `backend/**` |
@@ -31,7 +31,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 | **Testing** | `python manage.py test --settings=config.settings_test` |
 | **Database** | Uses SQLite in-memory (no live MySQL connection required) |
 
-##### Job 2: `frontend-check` — Frontend Lint & Build
+#### Job 2: `frontend-check` — Frontend Lint & Build
 | Item | Details |
 | :--- | :--- |
 | **Trigger** | Any Push/PR modifying source files in `frontend/**` |
@@ -40,7 +40,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 | **Linting** | `npm run lint` (ESLint) |
 | **Building** | `npm run build` (Vite production build) |
 
-##### Job 3: `e2e-tests` — Playwright E2E Tests
+#### Job 3: `e2e-tests` — Playwright E2E Tests
 | Item | Details |
 | :--- | :--- |
 | **Dependency** | Requires `frontend-check` to succeed |
@@ -48,7 +48,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 | **Scope** | Executes critical user journey test suites |
 | **Artifact** | Test reports stored for 7 days on GitHub Actions |
 
-##### Job 4: `build-and-push` — Build & Push Docker Images
+#### Job 4: `build-and-push` — Build & Push Docker Images
 | Item | Details |
 | :--- | :--- |
 | **Dependency** | Requires both `backend-test` and `e2e-tests` to succeed |
@@ -57,7 +57,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 | **Tagging** | Applies `latest` and `sha-<7_commit_chars>` tags |
 | **Caching** | Utilizes GitHub Actions Cache to accelerate build times |
 
-##### Job 5: `deploy-backend` — Deploy to Amazon ECS
+#### Job 5: `deploy-backend` — Deploy to Amazon ECS
 | Item | Details |
 | :--- | :--- |
 | **Dependency** | Requires `build-and-push` job completion |
@@ -65,7 +65,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 | **Strategy** | Rolling Update (ECS manages zero-downtime traffic shift) |
 | **Migration** | Executes one-off Fargate task via `run-task` to run DB migrations |
 
-##### Job 6: `smoke-tests` — Post-Deployment Verification
+#### Job 6: `smoke-tests` — Post-Deployment Verification
 | Item | Details |
 | :--- | :--- |
 | **Dependency** | Requires `deploy-backend` completion |
@@ -74,7 +74,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 
 ---
 
-#### 3. Workflow Triggers Summary Table
+### 5.4.2.3. Workflow Triggers Summary Table
 
 | Event | Target Branches | Executed Jobs |
 | :--- | :--- | :--- |
@@ -84,7 +84,7 @@ The pipeline consists of 6 core sequential/parallel Jobs:
 
 ---
 
-#### 4. Pipeline Security Architecture
+### 5.4.2.4. Pipeline Security Architecture
 
 | Security Control | Implementation Details |
 | :--- | :--- |

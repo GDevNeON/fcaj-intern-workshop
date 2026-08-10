@@ -8,22 +8,27 @@ pre: " <b> 6. </b> "
 
 During my internship at **Amazon Web Services Vietnam Co., Ltd.** from **June 22, 2026**, to **August 15, 2026**, I had the opportunity to learn, hone my skills, and apply the knowledge gained at university to a real-world work environment. This period allowed me to gain exposure to enterprise-standard system development and operational processes while enhancing both my technical expertise and professional skills.
 
-Throughout the internship, I participated in the project titled **"Automating the CI/CD Pipeline for the Neon Food Map Application on AWS."** In this project, I undertook key tasks across the following phases:
+Throughout the internship, I participated in the project titled **"NeonFoodMap: AWS Cloud Deployment and CI/CD Automation."** In this project, I undertook key tasks across the following phases:
 
-**Phase 1: Building Deployment Infrastructure on AWS**
+**Phase 1: Foundation, Networking, and Database Infrastructure**
 
-*   Setting up Amazon S3 buckets for data storage.
-*   Configuring Lifecycle Policies and managing access permissions via AWS IAM for the S3 buckets.
+*   Designing and setting up a Multi-AZ VPC architecture, including Public/Private subnets, IGW, and NAT Gateways.
+*   Provisioning and securing Amazon RDS MySQL databases within private subnets.
+*   Configuring dedicated Amazon S3 buckets with Lifecycle Policies and utilizing CloudFormation for strict IAM role management.
 
 **Phase 2: Continuous Integration and Application Deployment**
 
-*   Deploying the application on Amazon ECS Fargate.
-*   Configuring and deploying the React application within the AWS environment.
+*   Dockerizing both Frontend (React) and Backend (Django) applications and pushing images to Amazon ECR.
+*   Building an automated CI/CD pipeline using GitHub Actions with secure OIDC authentication.
+*   Deploying the application on Amazon ECS (Fargate) cluster behind an Application Load Balancer (ALB) with Auto-Scaling policies.
+*   Integrating Amazon CloudFront CDN to cache static content and accelerate frontend delivery.
 
-**Phase 3: System Monitoring and Operations**
+**Phase 3: System Monitoring, Quality Assurance, and Operations**
 
-*   Configuring Amazon CloudWatch Dashboards to monitor system status and performance.
-*   Setting up CloudWatch Logs and Log Insights to collect, store, and analyze application activity logs.
+*   Configuring Amazon CloudWatch Dashboards, Logs, and Insights for real-time performance tracking and error monitoring.
+*   Implementing cost monitoring utilizing AWS Budgets & Alerts.
+*   Executing End-to-End (E2E) testing, load testing, and observing system stability during Production Go-Live.
+*   Compiling comprehensive project documentation, including detailed deployment runbooks and architecture diagrams.
 
 Through these tasks, I gained comprehensive insight into the processes of deploying and operating software systems on a cloud computing platform. This practical experience helped me realize that in the field of software development, coding is merely one part of the product-building process. Furthermore, infrastructure design, cloud service configuration, deployment environment management, system monitoring, and release process automation are critical factors that determine an application's stability, scalability, and operational efficiency.
 

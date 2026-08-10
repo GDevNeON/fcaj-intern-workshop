@@ -5,9 +5,8 @@ weight : 1
 chapter : false
 pre : " <b> 5.5.1. </b> "
 ---
-### 5.5.1. ECS Services + Auto-Scaling
 
-### Create the Backend Service
+### 5.5.1.1. Create the Backend Service
 
 1. Open **ECS → Clusters → NeonFoodmap-cluster → Create service**.
 2. Select the `neonfoodmap-task-be` task definition family, set the service name to `svc-neonfoodmap-be`, and select the latest **Task definition revision**.
@@ -26,7 +25,7 @@ pre : " <b> 5.5.1. </b> "
 
 ![image042](/images/5-Workshop/5.4-Neon-Deployment/image042.png)
 
-### Create the Frontend Service
+### 5.5.1.2. Create the Frontend Service
 
 Repeat the service-creation process for the frontend: select the `neonfoodmap-task-fe` task definition, set the service name to `svc-neonfoodmap-fe`, and choose the private subnets and ECS task security group. Under **Load balancing**, select `ALB-NeonFoodMap`, the `80:HTTP` listener, container port `8000`, and the `TG-NeonFoodMap-BE` target group.
 
@@ -34,7 +33,7 @@ After creation, ECS performs a rolling deployment. During this time, keep enough
 
 ![image043](/images/5-Workshop/5.4-Neon-Deployment/image043.png)
 
-### Enable Auto Scaling and Create a CPU Policy
+### 5.5.1.3. Enable Auto Scaling and Create a CPU Policy
 
 1. Open the `svc-neonfoodmap-be` service, go to the **Service auto scaling** tab, and select **Update**.
 2. Enable **Use service auto scaling**. Under *Capacity limits*, set the minimum number of tasks to `2` and the maximum to `6`. This keeps two backend tasks ready to serve requests while limiting scale-out to six tasks to control costs.

@@ -6,15 +6,13 @@ chapter : false
 pre : " <b> 5.4.7. </b> "
 ---
 
-### 5.4.7. Khởi tạo Amazon ECR Repositories
-
 Amazon Elastic Container Registry (ECR) là dịch vụ lưu trữ và quản lý Docker Images an toàn. Dự án yêu cầu 2 repository riêng biệt cho Backend và Frontend.
 
 ---
 
-#### 1. Phương pháp Khởi tạo
+### 5.4.7.1. Phương pháp Khởi tạo
 
-##### Cách 1: Sử dụng PowerShell Script (Khuyến nghị)
+#### Cách 1: Sử dụng PowerShell Script (Khuyến nghị)
 Trong thư mục dự án đã tích hợp sẵn script tự động kiểm tra idempotency và bật cấu hình bảo mật:
 
 ```powershell
@@ -28,7 +26,7 @@ Kết quả hiển thị URI của từng repository:
 
 ![Kết quả khởi tạo ECR Repositories thành công](/images/5-Workshop/5.3-Neon-Infracstructure/image085.png)
 
-##### Cách 2: Sử dụng AWS CLI hoặc Thao tác Thủ công
+#### Cách 2: Sử dụng AWS CLI hoặc Thao tác Thủ công
 Chạy các lệnh sau trong terminal (yêu cầu AWS CLI đã xác thực):
 
 ```bash
@@ -51,7 +49,7 @@ aws ecr create-repository \
 
 ---
 
-#### 2. Tiêu chuẩn Bảo mật ECR
+### 5.4.7.2. Tiêu chuẩn Bảo mật ECR
 
 Cả 2 repositories đều được thiết lập các cơ chế bảo mật tiêu chuẩn:
 
@@ -63,7 +61,7 @@ Cả 2 repositories đều được thiết lập các cơ chế bảo mật ti�
 
 ---
 
-#### 3. Kiểm tra Kết quả
+### 5.4.7.3. Kiểm tra Kết quả
 
 Chạy lệnh CLI sau để xác minh 2 repositories đã ở trạng thái sẵn sàng:
 

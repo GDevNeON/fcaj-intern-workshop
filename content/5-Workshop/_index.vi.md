@@ -8,7 +8,7 @@ pre: " <b> 5. </b> "
 
 # NeonFoodMap - Triển khai ứng dụng Cloud-Native trên AWS
 
-#### Tổng quan
+### Tổng quan
 
 Workshop này hướng dẫn toàn bộ quy trình xây dựng, triển khai và vận hành **NeonFoodMap** - ứng dụng bản đồ ẩm thực và du lịch - trên nền tảng Amazon Web Services (AWS). Dự án áp dụng mô hình Cloud & DevOps hiện đại với pipeline CI/CD tự động hoàn toàn, khả năng sẵn sàng cao theo Multi-AZ, và hệ thống giám sát toàn diện.
 
@@ -19,7 +19,7 @@ Workshop được chia thành bốn giai đoạn chính:
 - **Vận hành**: Cấu hình auto-scaling, phân phối CDN, giám sát, cảnh báo chi phí và kiểm thử end-to-end
 - **Hình ảnh minh họa**: Danh sách tham chiếu toàn bộ ảnh chụp màn hình sử dụng trong workshop
 
-#### Tổng quan kiến trúc
+### Tổng quan kiến trúc
 
 Hệ thống được tổ chức theo năm lớp chính:
 
@@ -31,10 +31,11 @@ Hệ thống được tổ chức theo năm lớp chính:
 | Data | Amazon RDS MySQL (Multi-AZ) |
 | Monitoring | Amazon CloudWatch, Amazon SNS, AWS Budgets |
 
-#### Nội dung
+### Nội dung
 
 1. [Tổng quan Workshop](5.1-Workshop-overview/)
 2. [Chuẩn bị](5.2-Prerequiste/)
 3. [Thiết kế và xây dựng hạ tầng NeonFoodMap trên AWS](5.3-Neon-Infrastructure/)
 4. [Triển khai NeonFoodMap trên AWS](5.4-Neon-Deployment/)
 5. [Kiểm thử, vận hành và triển khai liên tục](5.5-Neon-Operations/)
+6. [Hình ảnh minh họa](5.6-Neon-Image/)

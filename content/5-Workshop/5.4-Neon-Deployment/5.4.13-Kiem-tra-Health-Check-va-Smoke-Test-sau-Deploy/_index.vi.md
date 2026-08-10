@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.4.13. </b> "
 ---
 
-### 5.4.13. Kiểm tra health check và smoke test sau deploy
+### 5.4.13.1. Kiểm tra health check và smoke test sau deploy
 
 Sau khi ECS task chạy xong, kiểm tra trạng thái target group.
 

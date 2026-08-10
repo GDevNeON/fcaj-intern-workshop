@@ -6,13 +6,11 @@ chapter : false
 pre : " <b> 5.4.5. </b> "
 ---
 
-### 5.4.5. Declare Secrets and Variables on GitHub
-
 To enable GitHub Actions to securely interface with AWS resources and package container images without exposing sensitive parameters in source control, you must configure **Repository Secrets** and **Repository Variables**.
 
 ---
 
-#### 1. Declare Repository Secrets
+### 5.4.5.1. Declare Repository Secrets
 
 NAVIGATE TO: **Settings** → **Secrets and variables** → **Actions** → Click **New repository secret**.
 
@@ -39,7 +37,7 @@ NAVIGATE TO: **Settings** → **Secrets and variables** → **Actions** → Clic
 
 ---
 
-#### 2. Declare Repository Variables
+### 5.4.5.2. Declare Repository Variables
 
 Switch to the **Variables** tab under **Settings** → **Secrets and variables** → **Actions** → Click **New repository variable**.
 

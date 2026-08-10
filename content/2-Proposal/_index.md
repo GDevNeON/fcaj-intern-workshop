@@ -3,7 +3,7 @@ title: "Proposal"
 date: 2026-07-01
 weight: 2
 chapter: false
-pre: "<b>2.</b>"
+pre: "<b>2. </b>"
 ---
 
 # CI/CD Pipeline Automation for the Neon Food Map Application on AWS

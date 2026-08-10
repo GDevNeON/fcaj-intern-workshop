@@ -5,11 +5,6 @@ weight: 7
 chapter: false
 pre: " <b> 7. </b> "
 ---
-<!-- {{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}} -->
-<!-- 
->Tại đây bạn có thể tự do đóng góp ý kiến cá nhân về những trải nghiệm khi tham gia chương trình First Cloud AI Journey, giúp team FCAJ cải thiện những vấn đề còn thiếu sót dựa trên các hạng mục sau: -->
 
 ### Đánh giá chung
 
@@ -28,14 +23,11 @@ Trong quá trình thực tập, mình học được nhiều kỹ năng mới nh
 **5. Văn hóa & tinh thần đồng đội**  
 Văn hóa công ty rất tích cực: mọi người tôn trọng lẫn nhau, làm việc nghiêm túc nhưng vẫn vui vẻ. Khi có dự án gấp, mọi người cùng nhau cố gắng, hỗ trợ không phân biệt vị trí. Điều này giúp mình cảm thấy mình là một phần của tập thể, dù chỉ là thực tập sinh.
 
-**6. Chính sách / phúc lợi cho thực tập sinh**  
-Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về thời gian linh hoạt khi cần thiết. Ngoài ra, việc được tham gia các buổi đào tạo nội bộ là một điểm cộng lớn.
-
 
 ### Một số câu hỏi khác
 - Điều bạn **hài lòng nhất** trong thời gian thực tập?
 
-    Điều em hài lòng nhất trong thời gian thực tập là có cơ hội tiếp cận quy trình triển khai phần mềm theo mô hình DevOps trên nền tảng AWS. Bên cạnh đó, môi trường làm việc chuyên nghiệp, cởi mở và luôn khuyến khích học hỏi đã giúp em tự tin hơn trong việc nghiên cứu, giải quyết vấn đề và phát triển bản thân.
+    Điều em hài lòng nhất trong thời gian thực tập là có cơ hội tiếp cận quy trình triển khai phần mềm theo mô hình DevOps trên nền tảng AWS. Bên cạnh đó, môi trường làm việc chuyên nghiệp, cởi mở và luôn khuyến khích học hỏi đã giúp em tự tự tin hơn trong việc nghiên cứu, giải quyết vấn đề và phát triển bản thân.
 
 - Điều bạn nghĩ công ty **cần cải thiện** cho các thực tập sinh sau?
     
@@ -43,7 +35,7 @@ Công ty có hỗ trợ phụ cấp thực tập và tạo điều kiện về t
 
 - Nếu giới thiệu cho bạn bè, bạn có **khuyên họ thực tập ở đây không**? Vì sao?  
     
-    Em vẫn sẽ giới thiệu cho bạn bè thực tập ở đây vì đây là môi trường phù hợp để sinh viên tiếp cận các công nghệ hiện đại, được tham gia vào dự án thực tế và rèn luyện kỹ năng làm việc trong môi trường doanh nghiệp
+    Em vẫn sẽ giới thiệu cho bạn bè thực tập ở đây vì đây là môi trường phù hợp để sinh viên tiếp cận các công nghệ hiện đại, được tham gia vào dự án thực tế và rèn luyện kỹ năng làm việc trong môi trường doanh nghiệp.
 
 ### Đề xuất & mong muốn
 - Bạn có đề xuất gì để cải thiện trải nghiệm trong kỳ thực tập?  

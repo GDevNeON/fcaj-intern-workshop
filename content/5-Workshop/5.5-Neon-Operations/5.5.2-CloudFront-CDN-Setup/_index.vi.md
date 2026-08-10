@@ -5,9 +5,8 @@ weight : 2
 chapter : false
 pre : " <b> 5.5.2. </b> "
 ---
-### 5.5.2. CloudFront + CDN Setup
 
-### Tạo CloudFront Distribution
+### 5.5.2.1. Tạo CloudFront Distribution
 
 Mở CloudFront Console → Distributions và chọn Create distribution, sau đó điền các thông số sau:
 
@@ -21,7 +20,7 @@ Mở CloudFront Console → Distributions và chọn Create distribution, sau đ
 
 ![image011.png](/images/5-Workshop/5.5-Neon-Operations/image011.png)
 
-### Cấu hình S3 Origin và OAC
+### 5.5.2.3. Cấu hình S3 Origin và OAC
 
 **Origin type:** Chọn **Amazon S3**.
 
@@ -37,7 +36,7 @@ Mở CloudFront Console → Distributions và chọn Create distribution, sau đ
 
 ![image013.png](/images/5-Workshop/5.5-Neon-Operations/image013.png)
 
-### Điều chỉnh ALB Origin
+### 5.5.2.4. Điều chỉnh ALB Origin
 
 Sau khi khởi tạo, vào **Distributions**, chọn distribution vừa tạo, mở tab **Origins** và chỉnh sửa origin Elastic Load Balancing đã liên kết. Đặt *Protocol* là **HTTP only** để phù hợp với ALB/API hiện tại, tránh lỗi giao tiếp hoặc phản hồi `400 Bad Request` do không khớp giao thức.
 

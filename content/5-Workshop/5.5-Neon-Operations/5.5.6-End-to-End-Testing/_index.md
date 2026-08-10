@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.5.6. </b> "
 ---
 
-### 5.5.6. End-to-End Testing
-
 After completing this section, the system will be verified to ensure:
 - The complete user flow from **Frontend** through **ALB** to **Backend (ECS)** works correctly
 - Storage and CDN services (**S3, CloudFront, RDS MySQL**) serve data as expected
@@ -15,9 +13,9 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-## Test Scenarios
+### 5.5.6.1. Test Scenarios
 
-### Scenario 1. User Registration → Login Flow
+#### Scenario 1. User Registration → Login Flow
 
 | Field | Detail |
 |-------|--------|
@@ -42,7 +40,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 2. Browse POIs and Fetch Descriptions
+#### Scenario 2. Browse POIs and Fetch Descriptions
 
 | Field | Detail |
 |-------|--------|
@@ -62,7 +60,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 3. Audio Playback via CloudFront
+#### Scenario 3. Audio Playback via CloudFront
 
 | Field | Detail |
 |-------|--------|
@@ -84,7 +82,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 4. Tour Booking and Journey Tracking
+#### Scenario 4. Tour Booking and Journey Tracking
 
 | Field | Detail |
 |-------|--------|
@@ -109,7 +107,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 5. Payment Integration (Sandbox)
+#### Scenario 5. Payment Integration (Sandbox)
 
 | Field | Detail |
 |-------|--------|
@@ -139,7 +137,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 6. Error Handling (Invalid Data & Timeouts)
+#### Scenario 6. Error Handling (Invalid Data & Timeouts)
 
 | Field | Detail |
 |-------|--------|
@@ -154,7 +152,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-### Scenario 7. Mobile Responsiveness
+#### Scenario 7. Mobile Responsiveness
 
 | Field | Detail |
 |-------|--------|
@@ -171,7 +169,7 @@ After completing this section, the system will be verified to ensure:
 
 ---
 
-## Testing Summary
+### 5.5.6.2. Testing Summary
 
 The majority of test scenarios passed as expected. Identified edge cases have been documented, and most have either been resolved or have a fallback in place.
 

@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.3.4. </b> "
 ---
 
-### 5.3.15. Tạo IAM Role cho ECS task execution
+### 5.3.4.1. Tạo IAM Role cho ECS task execution
 
 1. Mở IAM Console → Roles → Create role.
 2. Chọn trusted entity `AWS service → Elastic Container Service → ECS Task`.
@@ -33,7 +33,7 @@ pre : " <b> 5.3.4. </b> "
 ![Hình 129.](/images/5-Workshop/5.3-Neon-Infracstructure/image129.png)
 ![Hình 131.](/images/5-Workshop/5.3-Neon-Infracstructure/image131.png)
 
-### 5.3.16. Tạo GitHub OIDC provider và IAM Role cho GitHub Actions
+### 5.3.4.2. Tạo GitHub OIDC provider và IAM Role cho GitHub Actions
 
 1. Vào IAM Console → Access management → Identity providers.
 2. Chọn Add provider.

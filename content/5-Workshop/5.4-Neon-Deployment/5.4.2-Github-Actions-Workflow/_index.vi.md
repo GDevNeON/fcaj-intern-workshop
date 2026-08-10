@@ -6,22 +6,22 @@ chapter : false
 pre : " <b> 5.4.2. </b> "
 ---
 
-### 5.4.2. Lấy và Cấu hình GitHub Actions Workflow
+## Lấy và Cấu hình GitHub Actions Workflow
 
 Pipeline CI/CD của dự án được tự động hóa hoàn toàn thông qua GitHub Actions. File cấu hình workflow điều phối các công việc từ kiểm thử mã nguồn, đóng gói container image, đẩy lên AWS ECR đến triển khai tự động lên Amazon ECS.
 
-#### 1. Lấy file Workflow
+### 5.4.2.2. Lấy file Workflow
 Truy cập kho mã nguồn GitHub của dự án và tải/kiểm tra file workflow:
 - **Đường dẫn**: `.github/workflows/deploy.yml`
 - **URL tham chiếu**: [GitHub Actions deploy.yml](https://github.com/HaoWasabi/NeonFoodmap/blob/main/.github/workflows/deploy.yml)
 
 ---
 
-#### 2. Chi tiết các Jobs trong Pipeline
+### 5.4.2.3. Chi tiết các Jobs trong Pipeline
 
 Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 
-##### Job 1: `backend-test` — Backend Lint & Unit Test
+#### Job 1: `backend-test` — Backend Lint & Unit Test
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Trigger** | Mọi lệnh Push/PR có thay đổi mã nguồn thuộc `backend/**` |
@@ -32,7 +32,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 | **Database** | Sử dụng SQLite in-memory (không yêu cầu cơ sở dữ liệu MySQL thật) |
 
 
-##### Job 2: `frontend-check` — Frontend Lint & Build
+#### Job 2: `frontend-check` — Frontend Lint & Build
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Trigger** | Mọi lệnh Push/PR có thay đổi mã nguồn thuộc `frontend/**` |
@@ -42,7 +42,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 | **Building** | `npm run build` (Vite production build) |
 
 
-##### Job 3: `e2e-tests` — Playwright E2E Tests
+#### Job 3: `e2e-tests` — Playwright E2E Tests
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Phụ thuộc** | Yêu cầu `frontend-check` phải vượt qua (Pass) |
@@ -51,7 +51,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 | **Artifact** | Báo cáo test được lưu trữ 7 ngày trên GitHub Actions |
 
 
-##### Job 4: `build-and-push` — Build & Push Docker Images
+#### Job 4: `build-and-push` — Build & Push Docker Images
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Phụ thuộc** | Yêu cầu cả `backend-test` và `e2e-tests` đều phải Pass |
@@ -61,7 +61,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 | **Caching** | Sử dụng GitHub Actions Cache để tối ưu thời gian build |
 
 
-##### Job 5: `deploy-backend` — Triển khai lên Amazon ECS
+#### Job 5: `deploy-backend` — Triển khai lên Amazon ECS
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Phụ thuộc** | Yêu cầu Job `build-and-push` thành công |
@@ -70,7 +70,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 | **Migration** | Thực hiện lệnh `run-task` (Fargate task ngắn hạn) để migrate DB |
 
 
-##### Job 6: `smoke-tests` — Kiểm tra sau Triển khai
+#### Job 6: `smoke-tests` — Kiểm tra sau Triển khai
 | Mục | Chi tiết |
 | :--- | :--- |
 | **Phụ thuộc** | Yêu cầu Job `deploy-backend` hoàn tất |
@@ -79,7 +79,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 
 ---
 
-#### 3. Bảng Tổng hợp Điều kiện Kích hoạt (Triggers)
+### 5.4.2.4. Bảng Tổng hợp Điều kiện Kích hoạt (Triggers)
 
 | Sự kiện (Event) | Nhánh (Branches) | Các Jobs được thực thi |
 | :--- | :--- | :--- |
@@ -89,7 +89,7 @@ Pipeline bao gồm 6 giai đoạn (Jobs) chính:
 
 ---
 
-#### 4. Cơ chế Bảo mật của Pipeline
+### 5.4.2.5. Cơ chế Bảo mật của Pipeline
 
 | Lớp bảo mật | Mô tả chi tiết |
 | :--- | :--- |

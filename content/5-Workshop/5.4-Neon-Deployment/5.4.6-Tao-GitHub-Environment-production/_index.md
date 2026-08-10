@@ -6,13 +6,11 @@ chapter : false
 pre : " <b> 5.4.6. </b> "
 ---
 
-### 5.4.6. Provision GitHub Environment "production"
-
 GitHub Environments provide deployment protection rules—such as mandatory manual approval gates—to control software releases into production infrastructure.
 
 ---
 
-#### Step-by-Step Instructions:
+### 5.4.6.1. Step-by-Step Instructions:
 
 1. **Initialize Environment**:
    - Navigate to your project's GitHub repository.

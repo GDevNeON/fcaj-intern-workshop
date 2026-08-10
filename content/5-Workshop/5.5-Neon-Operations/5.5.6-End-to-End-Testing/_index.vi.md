@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.5.6. </b> "
 ---
 
-### 5.5.6. Kiểm thử End-to-End
-
 Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 - Toàn bộ luồng người dùng từ **Frontend** qua **ALB** đến **Backend (ECS)** hoạt động đúng
 - Các dịch vụ lưu trữ và CDN (**S3, CloudFront, RDS MySQL**) phục vụ đúng dữ liệu
@@ -15,9 +13,9 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-## Các kịch bản kiểm thử
+### 5.5.6.1. Các kịch bản kiểm thử
 
-### Kịch bản 1. Luồng đăng ký → đăng nhập
+#### Kịch bản 1. Luồng đăng ký → đăng nhập
 
 | Mục | Nội dung |
 |-----|----------|
@@ -42,7 +40,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 2. Duyệt điểm đến (Browse POIs) và xem mô tả
+#### Kịch bản 2. Duyệt điểm đến (Browse POIs) và xem mô tả
 
 | Mục | Nội dung |
 |-----|----------|
@@ -62,7 +60,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 3. Phát âm thanh thuyết minh qua CloudFront
+#### Kịch bản 3. Phát âm thanh thuyết minh qua CloudFront
 
 | Mục | Nội dung |
 |-----|----------|
@@ -84,7 +82,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 4. Đặt tour và theo dõi hành trình
+#### Kịch bản 4. Đặt tour và theo dõi hành trình
 
 | Mục | Nội dung |
 |-----|----------|
@@ -109,7 +107,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 5. Tích hợp thanh toán (Sandbox)
+#### Kịch bản 5. Tích hợp thanh toán (Sandbox)
 
 | Mục | Nội dung |
 |-----|----------|
@@ -139,7 +137,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 6. Kiểm thử xử lý lỗi (Invalid data & Timeouts)
+#### Kịch bản 6. Kiểm thử xử lý lỗi (Invalid data & Timeouts)
 
 | Mục | Nội dung |
 |-----|----------|
@@ -154,7 +152,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-### Kịch bản 7. Kiểm thử giao diện đa nền tảng (Mobile Responsiveness)
+#### Kịch bản 7. Kiểm thử giao diện đa nền tảng (Mobile Responsiveness)
 
 | Mục | Nội dung |
 |-----|----------|
@@ -171,7 +169,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ được xác nhận:
 
 ---
 
-## Tổng kết kiểm thử
+### 5.5.6.2. Tổng kết kiểm thử
 
 Hầu hết các kịch bản kiểm thử đều hoạt động đúng như kỳ vọng. Các trường hợp ngoại lệ đã được ghi nhận và phần lớn đã được xử lý hoặc có phương án dự phòng.
 

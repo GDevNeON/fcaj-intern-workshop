@@ -1,59 +1,30 @@
 ---
 title: "Worklog Tuần 7"
-date: 2024-01-01
+date: 2026-08-03
 weight: 7
 chapter: false
 pre: " <b> 1.7. </b> "
 ---
-{{% notice warning %}}
-⚠️ **Lưu ý:** Các thông tin dưới đây chỉ nhằm mục đích tham khảo, vui lòng **không sao chép nguyên văn** cho bài báo cáo của bạn kể cả warning này.
-{{% /notice %}}
-
 
 ### Mục tiêu tuần 7:
 
-* Kết nối, làm quen với các thành viên trong First Cloud AI Journey.
-* Hiểu dịch vụ AWS cơ bản, cách dùng console & CLI.
+- SPRINT 3: Scaling, Monitoring & Go-Live (Phần 2).
+- Kiểm thử chất lượng (QA), End-to-End Testing và Go-live Production.
 
-### Các công việc cần triển khai trong tuần này:
-| Thứ | Công việc                                                                                                                                                                                   | Ngày bắt đầu | Ngày hoàn thành | Nguồn tài liệu                            |
-| --- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------ | --------------- | ----------------------------------------- |
-| 2   | - Làm quen với các thành viên FCAJ <br> - Đọc và lưu ý các nội quy, quy định tại đơn vị thực tập                                                                                             | 11/08/2025   | 11/08/2025      |
-| 3   | - Tìm hiểu AWS và các loại dịch vụ <br>&emsp; + Compute <br>&emsp; + Storage <br>&emsp; + Networking <br>&emsp; + Database <br>&emsp; + ... <br>                                            | 12/08/2025   | 12/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 4   | - Tạo AWS Free Tier account <br> - Tìm hiểu AWS Console & AWS CLI <br> - **Thực hành:** <br>&emsp; + Tạo AWS account <br>&emsp; + Cài AWS CLI & cấu hình <br> &emsp; + Cách sử dụng AWS CLI | 13/08/2025   | 13/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 5   | - Tìm hiểu EC2 cơ bản: <br>&emsp; + Instance types <br>&emsp; + AMI <br>&emsp; + EBS <br>&emsp; + ... <br> - Các cách remote SSH vào EC2 <br> - Tìm hiểu Elastic IP   <br>                  | 14/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
-| 6   | - **Thực hành:** <br>&emsp; + Tạo EC2 instance <br>&emsp; + Kết nối SSH <br>&emsp; + Gắn EBS volume                                                                                         | 15/08/2025   | 15/08/2025      | <https://cloudjourney.awsstudygroup.com/> |
+### Các công việc cần triển khai trong tuần:
 
+| Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
+| --- | --- | --- | --- | --- |
+| 2 | - Thực hiện End-to-End Testing trên các luồng người dùng chính | 03/08/2026 | 03/08/2026 | |
+| 3 | - Load testing và giám sát API | 04/08/2026 | 04/08/2026 | |
+| 4 | - Xử lý và khắc phục các lỗi phát sinh trong quá trình QA | 05/08/2026 | 05/08/2026 | |
+| 5 | - Kiểm tra hệ thống Real-time Error Tracking | 06/08/2026 | 06/08/2026 | |
+| 6 | - Go-Live Production và theo dõi tính ổn định của hệ thống | 07/08/2026 | 07/08/2026 | |
 
 ### Kết quả đạt được tuần 7:
 
-* Hiểu AWS là gì và nắm được các nhóm dịch vụ cơ bản: 
-  * Compute
-  * Storage
-  * Networking 
-  * Database
-  * ...
-
-* Đã tạo và cấu hình AWS Free Tier account thành công.
-
-* Làm quen với AWS Management Console và biết cách tìm, truy cập, sử dụng dịch vụ từ giao diện web.
-
-* Cài đặt và cấu hình AWS CLI trên máy tính bao gồm:
-  * Access Key
-  * Secret Key
-  * Region mặc định
-  * ...
-
-* Sử dụng AWS CLI để thực hiện các thao tác cơ bản như:
-
-  * Kiểm tra thông tin tài khoản & cấu hình
-  * Lấy danh sách region
-  * Xem dịch vụ EC2
-  * Tạo và quản lý key pair
-  * Kiểm tra thông tin dịch vụ đang chạy
-  * ...
-
-* Có khả năng kết nối giữa giao diện web và CLI để quản lý tài nguyên AWS song song.
-* ...
-
-
+- Hoàn thành phần 2 của SPRINT 3, thực hiện thành công các kịch bản End-to-End (E2E) testing trên các luồng người dùng chính yếu của hệ thống.
+- Thực hiện Load testing nhằm đánh giá sức chịu tải của hệ thống, kiểm chứng sự phản hồi của Auto-Scaling và API Gateway dưới áp lực lớn.
+- Phát hiện và khắc phục nhanh chóng các lỗi (bugs) sinh ra trong quá trình QA, đảm bảo ứng dụng vận hành đúng logic nghiệp vụ.
+- Đánh giá và xác nhận hệ thống Real-time Error Tracking thông qua CloudWatch hoạt động chính xác, cung cấp thông tin hữu ích để debug sự cố.
+- Triển khai thành công ứng dụng lên môi trường Production (Go-Live) và duy trì sự ổn định, không có downtime trong quá trình theo dõi hệ thống.

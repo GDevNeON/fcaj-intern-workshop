@@ -6,27 +6,25 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-
 ### Mục tiêu tuần 2:
 
-- Tìm hiểu quy trình CI/CD và ứng dụng của nó trong dự án trên AWS.
-- Nắm được cách hoạt động của GitHub Actions.
-- Làm quen với Docker, Amazon ECS và Amazon ECR trong triển khai ứng dụng.
+- Tìm hiểu các dịch vụ AWS phục vụ triển khai (RDS, ECS, ECR, CloudWatch, API Gateway).
+- Hoàn thiện thiết kế hệ thống và quy trình CI/CD.
 
 ### Các công việc cần triển khai trong tuần:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Tìm hiểu Continuous Integration (CI) <br> - Nghiên cứu Continuous Delivery và Continuous Deployment | 29/06/2026 | 29/06/2026 | |
-| 3 | - Tìm hiểu GitHub Actions <br> - Nghiên cứu Workflow, Runner, Job và Action | 30/06/2026 | 30/06/2026 | <https://docs.github.com/en/actions> |
-| 4 | - Nghiên cứu Docker Image, Container và Dockerfile <br> - Thực hành build và chạy ứng dụng bằng Docker | 01/07/2026 | 01/07/2026 | <https://docs.docker.com/> |
-| 5 | - Tìm hiểu Amazon ECS và Amazon ECR <br> - Nghiên cứu quy trình lưu trữ và triển khai container trên AWS | 02/07/2026 | 02/07/2026 | <https://docs.aws.amazon.com/ecs/> |
-| 6 | - Tổng hợp kiến thức về Docker, ECS, ECR và GitHub Actions <br> - Xây dựng sơ đồ tổng quan quy trình CI/CD | 03/07/2026 | 03/07/2026 | |
+| 2 | - Tìm hiểu RDS, ECS/ECR và kiến trúc Container Service | 29/06/2026 | 29/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Tìm hiểu CloudWatch (Log, Metrics, Alarm), API Gateway và Load Balancers | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Lựa chọn dịch vụ AWS phù hợp cho NeonFoodMap | 01/07/2026 | 01/07/2026 | |
+| 5 | - Hoàn thiện sơ đồ kiến trúc triển khai (Milestone) | 02/07/2026 | 02/07/2026 | |
+| 6 | - Xác định quy trình CI/CD và Deployment | 03/07/2026 | 03/07/2026 | |
 
 ### Kết quả đạt được tuần 2:
 
-- Hiểu quy trình CI/CD trong phát triển phần mềm hiện đại.
-- Nắm được cách GitHub Actions giúp tự động hóa quá trình build và triển khai.
-- Hiểu rõ vai trò của Docker trong đóng gói ứng dụng và lưu trữ image.
-- Có cái nhìn tổng quan về Amazon ECS và Amazon ECR trong triển khai container trên AWS.
-- Xây dựng nền tảng kiến thức để kết hợp CI/CD với hệ thống cloud thực tế.
+- Nắm vững kiến trúc và cách thức hoạt động của Amazon RDS trong việc lưu trữ cơ sở dữ liệu quan hệ có tính sẵn sàng cao (Multi-AZ).
+- Hiểu rõ sự khác biệt giữa các dịch vụ Container của AWS như ECS, ECR và lựa chọn AWS Fargate để triển khai ứng dụng dưới dạng Serverless Compute.
+- Nắm bắt được cách sử dụng CloudWatch để giám sát hệ thống (Metrics, Logs, Alarms) và API Gateway, Load Balancer để điều phối traffic.
+- Chốt sơ đồ kiến trúc hệ thống chi tiết bao gồm các thành phần Network (VPC, Subnet), Database (RDS), Compute (ECS), và Storage (S3).
+- Lên chiến lược triển khai CI/CD hiệu quả, quyết định sử dụng GitHub Actions để tự động hóa quá trình build Docker image và deploy lên ECS.

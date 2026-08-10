@@ -5,9 +5,8 @@ weight : 4
 chapter : false
 pre : " <b> 5.5.4. </b> "
 ---
-### 5.5.4. Cost Monitoring & Alerts
 
-### Set Up an AWS Budget and Monthly Spending Limit
+### 5.5.4.1. Set Up an AWS Budget and Monthly Spending Limit
 
 Open the **AWS Billing and Cost Management console**, select **Budgets**, and choose **Create budget**. Select **Cost budget**, then configure the following settings:
 
@@ -25,7 +24,7 @@ Open the **AWS Billing and Cost Management console**, select **Budgets**, and ch
 
 ![image045.jpg](/images/5-Workshop/5.5-Neon-Operations/image045.jpg)
 
-### Configure the Budget Scope and Tags
+### 5.5.4.2. Configure the Budget Scope and Tags
 
 **Budget scope:** Select **Filter specific AWS cost dimensions** to track costs for this project instead of the entire AWS account.
 
@@ -40,7 +39,7 @@ Open the **AWS Billing and Cost Management console**, select **Budgets**, and ch
 
 ![image046.jpg](/images/5-Workshop/5.5-Neon-Operations/image046.jpg)
 
-### Configure Alerts and Review Budget Details
+### 5.5.4.3. Configure Alerts and Review Budget Details
 
 Open **Budgets**, select `NeonFoodmap-Monthly-Budget`, and review the budget details, including **Budget health** and its alert thresholds:
 

@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.4.9. </b> "
 ---
 
-### 5.4.9. Kiểm tra Pipeline CI/CD
-
 Sau khi hoàn tất cấu hình GitHub Actions, truy cập **GitHub → Actions** để theo dõi quá trình thực thi pipeline. Pipeline được thiết kế gồm **06 job** chạy tuần tự nhằm kiểm tra mã nguồn, xây dựng Docker Image và triển khai ứng dụng lên AWS.
 
 | Thứ tự | Job | Mục đích |
@@ -21,7 +19,7 @@ Sau khi hoàn tất cấu hình GitHub Actions, truy cập **GitHub → Actions*
 
 ---
 
-### Trigger của Pipeline
+### 5.4.9.1. Trigger của Pipeline
 
 | Sự kiện | Branch | Jobs được thực hiện |
 |----------|--------|---------------------|
@@ -31,7 +29,7 @@ Sau khi hoàn tất cấu hình GitHub Actions, truy cập **GitHub → Actions*
 
 ---
 
-### Chi tiết các Job
+### 5.4.9.2. Chi tiết các Job
 
 #### Job 1 – `backend-test`
 
@@ -98,7 +96,7 @@ Sau khi hoàn tất cấu hình GitHub Actions, truy cập **GitHub → Actions*
 
 ---
 
-### Xác thực và bảo mật Pipeline
+### 5.4.9.3. Xác thực và bảo mật Pipeline
 
 Pipeline sử dụng **GitHub OIDC Federation** để xác thực với AWS thông qua **IAM Role** thay vì lưu Access Key tĩnh trong GitHub Secrets. Điều này giúp tăng tính bảo mật và chỉ cho phép repository được chỉ định thực hiện triển khai.
 
@@ -112,7 +110,7 @@ Pipeline sử dụng **GitHub OIDC Federation** để xác thực với AWS thô
 
 ---
 
-### Xử lý sự cố thường gặp
+### 5.4.9.4. Xử lý sự cố thường gặp
 
 | Vấn đề | Nguyên nhân | Cách xử lý |
 |--------|-------------|------------|

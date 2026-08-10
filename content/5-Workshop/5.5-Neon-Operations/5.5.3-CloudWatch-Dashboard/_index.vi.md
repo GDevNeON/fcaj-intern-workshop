@@ -4,9 +4,7 @@ date : 2024-01-01
 weight : 3
 chapter : false
 pre : " <b> 5.5.3. </b> "
----
-
-### 5.5.3. CloudWatch Dashboard 
+--- 
 
 Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu sau:
 
@@ -16,7 +14,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu 
 - Thông báo alarm qua Email hoạt động bình thường
 - Các truy vấn CloudWatch Log Insights đã được chuẩn bị
 
-### Các bước thực hiện
+### 5.5.3.1. Các bước thực hiện
 #### Bước 1. Tạo CloudWatch Dashboard
 
 1. Đăng nhập **AWS Management Console**.
@@ -131,7 +129,7 @@ Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu 
 
 ---
 
-####   Bước 5. Thêm Widget CloudWatch Log Insights
+#### Bước 5. Thêm Widget CloudWatch Log Insights
 1. Truy cập Dashboard, chọn Dashboard `NeonFoodMap-Operational-Dashboard` vừa mới tạo, chọn **Add widget**.
 
 ![Hình 69.](/images/5-Workshop/5.5-Neon-Operations/image069.png)

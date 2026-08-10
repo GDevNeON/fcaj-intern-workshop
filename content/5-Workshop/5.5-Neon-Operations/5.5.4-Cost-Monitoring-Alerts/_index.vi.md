@@ -5,9 +5,8 @@ weight : 4
 chapter : false
 pre : " <b> 5.5.4. </b> "
 ---
-### 5.5.4. Cost Monitoring & Alerts
 
-### Thiết lập AWS Budget và Ngân sách hàng tháng
+### 5.5.4.1. Thiết lập AWS Budget và Ngân sách hàng tháng
 
 Mở **AWS Billing and Cost Management Console** → chọn **Budgets** và chọn **Create budget**, sau đó chọn loại **Cost budget** và thiết lập các thông số sau:
 
@@ -25,7 +24,7 @@ Mở **AWS Billing and Cost Management Console** → chọn **Budgets** và ch�
 
 ![image045.jpg](/images/5-Workshop/5.5-Neon-Operations/image045.jpg)
 
-### Cấu hình Phạm vi Ngân sách (Budget Scope) và Thẻ Tag
+### 5.5.4.2. Cấu hình Phạm vi Ngân sách (Budget Scope) và Thẻ Tag
 
 **Budget scope:** Chọn **Filter specific AWS cost dimensions** để lọc chi phí cho riêng dự án thay vì theo dõi toàn bộ tài khoản AWS.
 
@@ -40,7 +39,7 @@ Mở **AWS Billing and Cost Management Console** → chọn **Budgets** và ch�
 
 ![image046.jpg](/images/5-Workshop/5.5-Neon-Operations/image046.jpg)
 
-### Thiết lập Cảnh báo (Alerts) và Kiểm tra Trang Chi tiết Ngân sách
+### 5.5.4.3. Thiết lập Cảnh báo (Alerts) và Kiểm tra Trang Chi tiết Ngân sách
 
 Mở **Budgets** → chọn `NeonFoodmap-Monthly-Budget` để xem thông tin chi tiết và kiểm tra trạng thái **Budget health** cũng như cấu hình các ngưỡng cảnh báo (**Alerts**):
 

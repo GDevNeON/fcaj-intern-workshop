@@ -6,30 +6,25 @@ chapter: false
 pre: " <b> 1.5. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Lưu ý:** Thông tin dưới đây chỉ mang tính tham khảo. Vui lòng không sao chép nguyên văn cho báo cáo cá nhân, bao gồm cả cảnh báo này.
-{{% /notice %}}
-
 ### Mục tiêu tuần 5:
 
-- Hoàn thành triển khai Task AWS-005 theo kế hoạch Sprint 2.
-- Hoàn thành Task FRONTEND-001, xây dựng và container hóa ứng dụng Frontend.
-- Chuẩn bị môi trường để Frontend có thể triển khai trên hạ tầng AWS.
+- SPRINT 2: CI/CD Pipeline & Deployment.
+- Tự động hóa quá trình deploy bằng GitHub Actions và thiết lập ECS, ALB.
 
 ### Các công việc cần triển khai trong tuần:
 
 | Thứ | Công việc | Ngày bắt đầu | Ngày hoàn thành | Tài liệu tham khảo |
 | --- | --- | --- | --- | --- |
-| 2 | - Tiếp nhận yêu cầu của Sprint 2 và phân tích Task AWS-005 cùng FRONTEND-001 <br> - Nghiên cứu Acceptance Criteria và tài liệu kỹ thuật của hai task | 20/07/2026 | 20/07/2026 | |
-| 3 | - Triển khai Task AWS-005 <br> - Tạo ECS Cluster bằng AWS Fargate <br> - Khởi tạo Task Definition cho Frontend <br> - Cấu hình CloudWatch Logs để theo dõi ứng dụng | 21/07/2026 | 21/07/2026 | |
-| 4 | - Thực hiện Task FRONTEND-001 <br> - Thiết lập môi trường phát triển Frontend <br> - Xây dựng Dockerfile và kiểm thử trên môi trường local <br> - Push Docker Image lên Amazon ECR | 22/07/2026 | 22/07/2026 | |
-| 5 | - Tiếp tục hoàn thiện FRONTEND-001 <br> - Cấu hình biến môi trường phục vụ Frontend <br> - Kiểm tra khả năng chạy container trên ECS Task Definition <br> - Kiểm thử ghi log lên Amazon CloudWatch | 23/07/2026 | 23/07/2026 | |
-| 6 | - Kiểm thử tổng thể các nội dung triển khai của AWS-005 và FRONTEND-001 <br> - Khắc phục lỗi cấu hình phát sinh <br> - Hoàn thiện tài liệu triển khai và báo cáo kết quả Sprint 2 | 24/07/2026 | 24/07/2026 | |
+| 2 | - Xây dựng GitHub Actions CI/CD pipeline (OIDC auth, build, push ECR) | 20/07/2026 | 20/07/2026 | |
+| 3 | - Cấu hình ECS cluster (Fargate) và task definitions | 21/07/2026 | 21/07/2026 | |
+| 4 | - Thiết lập ALB, Target Groups và Health Checks | 22/07/2026 | 22/07/2026 | |
+| 5 | - Cấu hình Django trên AWS (kết nối RDS, static files) | 23/07/2026 | 23/07/2026 | |
+| 6 | - Cấu hình React trên AWS (API URL, build args) | 24/07/2026 | 24/07/2026 | |
 
 ### Kết quả đạt được tuần 5:
 
-- Hoàn thành Task AWS-005, triển khai thành công Amazon ECS Cluster và cấu hình Task Definition cho Frontend.
-- Thiết lập CloudWatch Logs để theo dõi trạng thái và log của container.
-- Hoàn thành Task FRONTEND-001, xây dựng Docker Image cho Frontend và lưu trữ trên Amazon ECR.
-- Kiểm thử thành công việc chạy Frontend trong môi trường container và xác nhận cấu hình đáp ứng Acceptance Criteria của Sprint 2.
-- Hoàn thiện tài liệu triển khai và sẵn sàng tích hợp Frontend với các thành phần Backend trong các Sprint tiếp theo.
+- Hoàn thành SPRINT 2, thiết lập thành công luồng CI/CD tự động bằng GitHub Actions sử dụng xác thực OIDC an toàn với AWS.
+- Cấu hình thành công cụm Amazon ECS (sử dụng Fargate) và các Task Definitions với thông số tài nguyên CPU/Memory tối ưu cho Frontend và Backend.
+- Triển khai Application Load Balancer (ALB) kết hợp với Target Groups và cấu hình Health Checks để điều phối traffic và đảm bảo tính sẵn sàng cao.
+- Cấu hình thành công ứng dụng Django để kết nối an toàn tới cơ sở dữ liệu RDS và lưu trữ static files trực tiếp trên S3.
+- Điều chỉnh ứng dụng React (Frontend) để nhận API URL động thông qua biến môi trường khi build, giúp frontend giao tiếp trơn tru với Backend qua ALB.

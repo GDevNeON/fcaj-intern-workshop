@@ -6,8 +6,6 @@ chapter : false
 pre : " <b> 5.5.5. </b> "
 ---
 
-### 5.5.5. CloudWatch Logs và Log Insights
-
 Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu sau:
 
 - Thiết lập thời gian lưu trữ Log là **30 ngày**
@@ -19,9 +17,9 @@ Sau khi hoàn thành phần này, hệ thống sẽ đáp ứng các yêu cầu 
 
 ---
 
-## Các bước thực hiện
+### 5.5.5.2. Các bước thực hiện
 
-### Bước 1. Thiết lập thời gian lưu trữ Log (Retention Policy)
+#### Bước 1. Thiết lập thời gian lưu trữ Log (Retention Policy)
 
 CloudWatch mặc định lưu trữ Log vô thời hạn. Để tối ưu chi phí lưu trữ, cấu hình thời gian lưu Log là **30 ngày**.
 
@@ -45,7 +43,7 @@ CloudWatch mặc định lưu trữ Log vô thời hạn. Để tối ưu chi ph
 
 ---
 
-### Bước 2. Tạo Log Group
+#### Bước 2. Tạo Log Group
 
 Log Group được sử dụng để lưu trữ và quản lý Log của các dịch vụ AWS như ECS, Lambda hoặc VPC Flow Logs.
 
@@ -78,7 +76,7 @@ hoặc
 
 ---
 
-### Bước 3. Cấu hình ECS ghi Log vào CloudWatch
+#### Bước 3. Cấu hình ECS ghi Log vào CloudWatch
 
 Để các container của ECS ghi Log trực tiếp lên CloudWatch, cần cấu hình **awslogs Log Driver** trong Task Definition.
 
@@ -103,7 +101,7 @@ hoặc
 
 ---
 
-### Bước 4. Truy vấn Log bằng CloudWatch Logs Insights
+#### Bước 4. Truy vấn Log bằng CloudWatch Logs Insights
 
 CloudWatch Logs Insights cho phép tìm kiếm, thống kê và phân tích Log theo thời gian thực.
 
@@ -129,7 +127,7 @@ Có thể sử dụng để:
 
 ---
 
-### Bước 5. Cấu hình VPC Flow Logs
+#### Bước 5. Cấu hình VPC Flow Logs
 
 VPC Flow Logs giúp ghi nhận toàn bộ lưu lượng mạng đi vào và đi ra khỏi VPC, hỗ trợ phân tích sự cố kết nối và kiểm tra lưu lượng truy cập.
 
@@ -165,7 +163,7 @@ VPC Flow Logs giúp ghi nhận toàn bộ lưu lượng mạng đi vào và đi 
 
 ---
 
-### Bước 6. Kiểm tra Log và truy vấn
+#### Bước 6. Kiểm tra Log và truy vấn
 
 Sau khi hoàn tất cấu hình, tiến hành kiểm tra khả năng thu thập và phân tích Log của hệ thống.
 

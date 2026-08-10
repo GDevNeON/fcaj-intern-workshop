@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.2. </b> "
 ---
 
-#### IAM permissions
+### IAM permissions
 Add the following IAM permission policy to your user account to deploy and cleanup this workshop.
 ```
 {
@@ -216,7 +216,7 @@ Add the following IAM permission policy to your user account to deploy and clean
 
 ```
 
-#### Provision resources using CloudFormation
+### Provision resources using CloudFormation
 
 In this lab, we will use **N.Virginia region (us-east-1)**.
 

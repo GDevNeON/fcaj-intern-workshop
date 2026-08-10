@@ -6,13 +6,11 @@ chapter : false
 pre : " <b> 5.4.5. </b> "
 ---
 
-### 5.4.5. Khai báo Secrets và Variables trên GitHub
-
 Để pipeline GitHub Actions có thể tương tác an toàn với AWS và đóng gói ứng dụng mà không làm lộ các thông số nhạy cảm trong mã nguồn, bạn cần cấu hình **Repository Secrets** và **Repository Variables**.
 
 ---
 
-#### 1. Khai báo Repository Secrets
+### 5.4.5.1. Khai báo Repository Secrets
 
 TRUY CẬP: **Settings** → **Secrets and variables** → **Actions** → Nhấn **New repository secret**.
 
@@ -39,7 +37,7 @@ TRUY CẬP: **Settings** → **Secrets and variables** → **Actions** → Nhấ
 
 ---
 
-#### 2. Khai báo Repository Variables
+### 5.4.5.2. Khai báo Repository Variables
 
 Chuyển sang tab **Variables** tại **Settings** → **Secrets and variables** → **Actions** → Nhấn **New repository variable**.
 

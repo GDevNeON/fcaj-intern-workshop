@@ -6,15 +6,13 @@ chapter : false
 pre : " <b> 5.4.7. </b> "
 ---
 
-### 5.4.7. Provision Amazon ECR Repositories
-
 Amazon Elastic Container Registry (ECR) is a managed Docker container registry. The architecture requires two distinct repositories to store images for the Backend and Frontend services.
 
 ---
 
-#### 1. Repository Provisioning Methods
+### 5.4.7.1. Repository Provisioning Methods
 
-##### Method 1: Execution via PowerShell Script (Recommended)
+#### Method 1: Execution via PowerShell Script (Recommended)
 Run the automated script included in the project directory, which enforces idempotency and security standards:
 
 ```powershell
@@ -28,7 +26,7 @@ Expected output displaying URI for each repository:
 
 ![ECR Repositories creation result](/images/5-Workshop/5.3-Neon-Infracstructure/image085.png)
 
-##### Method 2: Execution via AWS CLI or Management Console
+#### Method 2: Execution via AWS CLI or Management Console
 Execute the following CLI commands (requires configured AWS credentials):
 
 ```bash
@@ -51,7 +49,7 @@ aws ecr create-repository \
 
 ---
 
-#### 2. ECR Security Compliance Standards
+### 5.4.7.2. ECR Security Compliance Standards
 
 Both container repositories are configured with enterprise security controls:
 
@@ -63,7 +61,7 @@ Both container repositories are configured with enterprise security controls:
 
 ---
 
-#### 3. Verification
+### 5.4.7.3. Verification
 
 Execute the CLI command below to verify repository creation:
 

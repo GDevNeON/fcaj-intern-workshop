@@ -6,30 +6,25 @@ chapter: false
 pre: " <b> 1.2. </b> "
 ---
 
-{{% notice warning %}}
-⚠️ **Note:** The following information is for reference purposes only. Please **do not copy verbatim** for your own report, including this warning.
-{{% /notice %}}
-
 ### Week 2 Objectives:
 
-- Study the CI/CD pipeline and its application in cloud projects.
-- Understand GitHub Actions, workflows, runners, and jobs.
-- Learn how Docker, ECS, and ECR support application deployment on AWS.
+- Learn AWS Services for deployment (RDS, ECS, ECR, CloudWatch, API Gateway).
+- Finalize system design and CI/CD workflow.
 
 ### Tasks to be carried out this week:
 
 | Day | Task | Start Date | Completion Date | Reference Material |
 | --- | --- | --- | --- | --- |
-| 2 | - Study the purpose of Continuous Integration and Continuous Delivery <br> - Review the CI/CD workflow in software development | 29/06/2026 | 29/06/2026 | |
-| 3 | - Learn GitHub Actions fundamentals <br> - Explore workflow, runner, job, and action concepts | 30/06/2026 | 30/06/2026 | <https://docs.github.com/en/actions> |
-| 4 | - Understand Docker Image, Container, and Dockerfile <br> - Practice building and running a basic container | 01/07/2026 | 01/07/2026 | <https://docs.docker.com/> |
-| 5 | - Study Amazon ECS and Amazon ECR <br> - Analyze how container images are stored and deployed in AWS | 02/07/2026 | 02/07/2026 | <https://docs.aws.amazon.com/ecs/> |
-| 6 | - Prepare a CI/CD overview diagram <br> - Summarize Docker, ECS, ECR, and GitHub Actions knowledge | 03/07/2026 | 03/07/2026 | |
+| 2 | - Learn RDS, ECS/ECR and Container Service architecture | 29/06/2026 | 29/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 3 | - Learn CloudWatch (Log, Metrics, Alarm), API Gateway, and Load Balancers | 30/06/2026 | 30/06/2026 | <https://cloudjourney.awsstudygroup.com/> |
+| 4 | - Select suitable AWS services for NeonFoodMap | 01/07/2026 | 01/07/2026 | |
+| 5 | - Finalize deployment architecture diagram (Milestone) | 02/07/2026 | 02/07/2026 | |
+| 6 | - Define CI/CD pipeline and deployment strategy | 03/07/2026 | 03/07/2026 | |
 
 ### Week 2 Achievements:
 
-- Gained a practical understanding of the CI/CD process in modern software development.
-- Learned how GitHub Actions automates build and deployment workflows.
-- Understand the role of Docker containers and how images are packaged for deployment.
-- Explored Amazon ECS and ECR as the main AWS services for container orchestration and image storage.
-- Built a high-level overview of how a cloud-based deployment workflow can be structured on AWS.
+- Gained a solid understanding of Amazon RDS architecture and its Multi-AZ high availability features.
+- Comprehended the differences between AWS Container services (ECS vs ECR) and selected AWS Fargate for serverless compute deployment.
+- Learned to utilize CloudWatch for system monitoring (Metrics, Logs, Alarms) and understood traffic routing using Load Balancers and API Gateway.
+- Finalized the detailed system architecture covering Network (VPC, Subnets), Database (RDS), Compute (ECS), and Storage (S3).
+- Established an effective CI/CD strategy, deciding on GitHub Actions to automate Docker image builds and ECS deployments.

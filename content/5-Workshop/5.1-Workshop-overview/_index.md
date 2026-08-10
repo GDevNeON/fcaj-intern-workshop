@@ -6,7 +6,6 @@ chapter : false
 pre : " <b> 5.1. </b> "
 ---
 
-# 5.1. Overview
 # Cloud & DevOps Challenge: Deploying the system to AWS Cloud and building an automated CI/CD pipeline
 
 To meet requirements for flexible deployment, software release automation, and enhanced system availability, this project involves deploying the application on the Amazon Web Services (AWS) platform and establishing a fully automated CI/CD (Continuous Integration/Continuous Deployment) pipeline. The system's Cloud & DevOps architecture is organized into three main processing flows: the CI/CD pipeline, the user request processing flow, and the monitoring & cost management flow.

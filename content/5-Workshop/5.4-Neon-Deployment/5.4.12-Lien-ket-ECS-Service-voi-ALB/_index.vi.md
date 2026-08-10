@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.4.12. </b> "
 ---
 
-### 5.4.12. Liên kết ECS Service với ALB
+### 5.4.12.1. Liên kết ECS Service với ALB
 
 Để ECS tự động đăng ký task vào target group, cần cấu hình load balancing trong ECS service.
 

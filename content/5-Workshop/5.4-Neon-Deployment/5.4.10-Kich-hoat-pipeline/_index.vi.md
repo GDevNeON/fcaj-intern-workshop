@@ -6,11 +6,11 @@ chapter : false
 pre : " <b> 5.4.10. </b> "
 ---
 
-### 5.4.10. Kích hoạt pipeline
+### 5.4.10.1. Kích hoạt pipeline
 
 Sau khi hoàn tất cấu hình GitHub Actions và xác nhận workflow đã được lưu trong repository, thực hiện đẩy mã nguồn lên nhánh `main` để kích hoạt quy trình CI/CD. Khi có sự kiện **push** vào nhánh `main`, GitHub Actions sẽ tự động thực thi toàn bộ pipeline gồm các bước kiểm tra mã nguồn, xây dựng Docker Image, triển khai lên Amazon ECS và kiểm tra trạng thái ứng dụng sau khi triển khai.
 
-#### 1. Chuyển sang nhánh `main`
+#### 5.4.10.2. Chuyển sang nhánh `main`
 
 Mở Terminal tại thư mục dự án và chuyển sang nhánh `main`.
 
@@ -26,7 +26,7 @@ git pull origin main
 
 ---
 
-#### 2. Hợp nhất mã nguồn từ nhánh `develop`
+#### 5.4.10.3. Hợp nhất mã nguồn từ nhánh `develop`
 
 Thực hiện merge toàn bộ thay đổi từ nhánh `develop` vào `main`.
 
@@ -45,7 +45,7 @@ Khi merge thành công, toàn bộ thay đổi trên nhánh `develop` sẽ đư�
 
 ---
 
-#### 3. Đẩy mã nguồn lên GitHub
+#### 5.4.10.4. Đẩy mã nguồn lên GitHub
 
 Thực hiện push nhánh `main` lên GitHub.
 
@@ -57,7 +57,7 @@ Ngay sau khi lệnh hoàn thành, GitHub sẽ phát sinh sự kiện **push**, t
 
 ---
 
-#### 4. Theo dõi quá trình thực thi Pipeline
+#### 5.4.10.5. Theo dõi quá trình thực thi Pipeline
 
 Truy cập repository trên GitHub, chọn **Actions** để theo dõi trạng thái thực thi của pipeline.
 
@@ -74,7 +74,7 @@ Mỗi job chỉ được thực hiện khi job trước đó hoàn thành thành
 
 ---
 
-#### 5. Kiểm tra kết quả
+#### 5.4.10.6. Kiểm tra kết quả
 
 Khi pipeline hoàn tất, kiểm tra các nội dung sau:
 

@@ -6,7 +6,7 @@ chapter : false
 pre : " <b> 5.4.6. </b> "
 ---
 
-### 5.4.6. Tạo GitHub Environment "production"
+### 5.4.6.1. Tạo GitHub Environment "production"
 
 GitHub Environment cho phép thiết lập các quy tắc quản trị an toàn (Deployment Protection Rules) như yêu cầu phê duyệt thủ công (Manual Approvals) trước khi mã nguồn được triển khai lên môi trường vĩnh viễn (Production).
 

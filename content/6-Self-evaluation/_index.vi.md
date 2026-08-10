@@ -6,26 +6,29 @@ chapter: false
 pre: " <b> 6. </b> "
 ---
 
-
-
 Trong suốt thời gian thực tập tại **Công ty TNHH Amazon Web Services Việt Nam** từ **22/06/2026** đến **15/08/2026**, tôi đã có cơ hội học hỏi, rèn luyện và vận dụng những kiến thức đã được trang bị tại trường vào môi trường làm việc thực tế. Đây là khoảng thời gian giúp tôi tiếp cận quy trình phát triển và vận hành hệ thống theo tiêu chuẩn doanh nghiệp, đồng thời nâng cao cả kiến thức chuyên môn lẫn kỹ năng làm việc.
 
-Trong thời gian thực tập, tôi được tham gia dự án **"Tự động hóa quy trình CI/CD cho ứng dụng Neon Food Map trên nền tảng AWS"**. Trong dự án này, tôi tham gia thực hiện các nhiệm vụ chính theo từng giai đoạn như sau:
+Trong thời gian thực tập, tôi được tham gia dự án **"NeonFoodMap: Triển khai hệ thống trên AWS và tự động hóa quy trình CI/CD"**. Trong dự án này, tôi tham gia thực hiện các nhiệm vụ chính theo từng giai đoạn như sau:
 
-**Giai đoạn 1: Xây dựng hạ tầng triển khai trên AWS**
+**Giai đoạn 1: Xây dựng nền tảng hạ tầng mạng và cơ sở dữ liệu trên AWS**
 
-* Thiết lập các Amazon S3 Buckets phục vụ lưu trữ dữ liệu.
-* Cấu hình Lifecycle Policy và quản lý quyền truy cập thông qua AWS IAM cho các S3 Buckets.
+* Thiết lập kiến trúc mạng VPC Multi-AZ, phân chia Public/Private subnets, Internet Gateway và NAT Gateway.
+* Khởi tạo và cấu hình an toàn cho cơ sở dữ liệu Amazon RDS MySQL bên trong Private Subnet.
+* Thiết lập các Amazon S3 Buckets chuyên dụng với Lifecycle Policy, sử dụng CloudFormation để quản lý và phân quyền AWS IAM một cách chặt chẽ.
 
-**Giai đoạn 2: Tích hợp và triển khai ứng dụng liên tục**
+**Giai đoạn 2: Tích hợp, tự động hóa CI/CD và triển khai ứng dụng**
 
-* Triển khai ứng dụng trên Amazon ECS Fargate.
-* Cấu hình và triển khai ứng dụng React trên môi trường AWS.
+* Đóng gói (Dockerize) các ứng dụng Frontend (React), Backend (Django) và đẩy image lên Amazon ECR.
+* Xây dựng luồng CI/CD tự động thông qua GitHub Actions, tích hợp xác thực OIDC an toàn.
+* Triển khai ứng dụng trên cụm Amazon ECS (Fargate) đằng sau Application Load Balancer (ALB) kết hợp chính sách Auto-Scaling.
+* Tích hợp Amazon CloudFront CDN nhằm lưu trữ nội dung tĩnh và tăng tốc độ phản hồi cho Frontend.
 
-**Giai đoạn 3: Giám sát và vận hành hệ thống**
+**Giai đoạn 3: Giám sát, kiểm thử và vận hành hệ thống (Go-Live)**
 
-* Cấu hình Amazon CloudWatch Dashboard để theo dõi trạng thái và hiệu năng của hệ thống.
-* Thiết lập CloudWatch Logs và Log Insights nhằm thu thập, lưu trữ và phân tích nhật ký hoạt động của ứng dụng.
+* Cấu hình Amazon CloudWatch (Dashboards, Logs, Insights) để giám sát hiệu năng theo thời gian thực và theo dõi lỗi.
+* Quản lý và theo dõi chi phí chặt chẽ với hệ thống cảnh báo AWS Budgets & Alerts.
+* Thực hiện kiểm thử toàn diện (End-to-End testing, Load testing) và quan sát độ ổn định của hệ thống khi đưa lên môi trường Production.
+* Hoàn thiện toàn bộ tài liệu dự án, bao gồm Deployment Runbook chi tiết và các sơ đồ kiến trúc tổng quan.
 
 Thông qua những nhiệm vụ trên, tôi có cơ hội tiếp cận toàn diện hơn với quy trình triển khai và vận hành một hệ thống phần mềm trên nền tảng điện toán đám mây. Trải nghiệm thực tế giúp tôi nhận ra rằng, trong lĩnh vực phát triển phần mềm, việc lập trình chỉ là một phần của quá trình xây dựng sản phẩm. Bên cạnh đó, việc thiết kế hạ tầng, cấu hình các dịch vụ đám mây, quản lý môi trường triển khai, giám sát hệ thống và tự động hóa quy trình phát hành cũng là những yếu tố quan trọng, góp phần quyết định tính ổn định, khả năng mở rộng và hiệu quả vận hành của một ứng dụng.
 
