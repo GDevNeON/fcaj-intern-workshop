@@ -13,13 +13,7 @@ After the ECS tasks are running, verify the status of the target groups.
 Items to check:
 
 - Frontend target group transitions to `Healthy`
-
-![alt text](image-1.png)
-
 - Backend target group transitions to `Healthy`
-
-![alt text](image.png)
-
 - The ALB DNS is accessible via browser
 ```
 http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/map
@@ -29,5 +23,3 @@ http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/map
 ```
 http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/api/
 ```
-
-![alt text](image-2.png)

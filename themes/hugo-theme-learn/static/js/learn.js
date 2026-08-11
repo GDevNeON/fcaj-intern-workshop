@@ -373,67 +373,6 @@ jQuery(document).ready(function () {
   })(window.document, window.history, window.location);
 });
 
-jQuery(window).on("load", function () {
-  function adjustForScrollbar() {
-    if (
-      parseInt(jQuery("#body-inner").height()) + 83 >=
-      jQuery("#body").height()
-    ) {
-      jQuery(".nav.nav-next").css({ "margin-right": getScrollBarWidth() });
-    } else {
-      jQuery(".nav.nav-next").css({ "margin-right": 0 });
-    }
-  }
-
-  // adjust sidebar for scrollbar
-  adjustForScrollbar();
-
-  jQuery(window).smartresize(function () {
-    adjustForScrollbar();
-  });
-
-  // store this page in session
-  var currentUrl = jQuery("body").data("url") || window.location.pathname;
-  if (currentUrl) {
-    sessionStorage.setItem(currentUrl, 1);
-    sessionStorage.setItem(window.location.pathname, 1);
-  }
-
-  function normalizeUrl(u) {
-    if (!u) return "";
-    var cleaned = u.replace(/^https?:\/\/[^\/]+/, "").split("?")[0].split("#")[0];
-    if (!cleaned.endsWith("/")) {
-      cleaned += "/";
-    }
-    return cleaned.toLowerCase();
-  }
-
-  // loop through the sessionStorage and see if something should be marked as visited
-  for (var i = 0; i < sessionStorage.length; i++) {
-    var key = sessionStorage.key(i);
-    if (sessionStorage.getItem(key) == 1) {
-      var normKey = normalizeUrl(key);
-      if (!normKey) continue;
-      jQuery("[data-nav-id]").each(function () {
-        var navId = normalizeUrl(jQuery(this).attr("data-nav-id"));
-        if (navId && (normKey === navId || normKey.endsWith(navId) || navId.endsWith(normKey))) {
-          jQuery(this).addClass("visited");
-        }
-      });
-    }
-  }
-
-  $(".highlightable").highlight(sessionStorage.getItem("search-value"), {
-    element: "mark",
-  });
-});
-
-$(function () {
-  $('a[rel="lightbox"]').featherlight({
-    root: "section#body",
-  });
-});
-
 jQuery.extend({
   highlight: function (node, re, nodeName, className) {
     if (node.nodeType === 3) {
@@ -515,3 +454,66 @@ jQuery.fn.highlight = function (words, options) {
     jQuery.highlight(this, re, settings.element, settings.className);
   });
 };
+
+jQuery(window).on("load", function () {
+  function adjustForScrollbar() {
+    if (
+      parseInt(jQuery("#body-inner").height()) + 83 >=
+      jQuery("#body").height()
+    ) {
+      jQuery(".nav.nav-next").css({ "margin-right": getScrollBarWidth() });
+    } else {
+      jQuery(".nav.nav-next").css({ "margin-right": 0 });
+    }
+  }
+
+  // adjust sidebar for scrollbar
+  adjustForScrollbar();
+
+  jQuery(window).smartresize(function () {
+    adjustForScrollbar();
+  });
+
+  // store this page in session
+  var currentUrl = jQuery("body").data("url") || window.location.pathname;
+  if (currentUrl) {
+    sessionStorage.setItem(currentUrl, 1);
+    sessionStorage.setItem(window.location.pathname, 1);
+  }
+
+  function normalizeUrl(u) {
+    if (!u) return "";
+    var cleaned = u.replace(/^https?:\/\/[^\/]+/, "").split("?")[0].split("#")[0];
+    if (!cleaned.endsWith("/")) {
+      cleaned += "/";
+    }
+    return cleaned.toLowerCase();
+  }
+
+  // loop through the sessionStorage and see if something should be marked as visited
+  for (var i = 0; i < sessionStorage.length; i++) {
+    var key = sessionStorage.key(i);
+    if (sessionStorage.getItem(key) == 1) {
+      var normKey = normalizeUrl(key);
+      if (!normKey) continue;
+      jQuery("[data-nav-id]").each(function () {
+        var navId = normalizeUrl(jQuery(this).attr("data-nav-id"));
+        if (navId && (normKey === navId || normKey.endsWith(navId) || navId.endsWith(normKey))) {
+          jQuery(this).addClass("visited");
+        }
+      });
+    }
+  }
+
+  if (typeof $(".highlightable").highlight === "function") {
+    $(".highlightable").highlight(sessionStorage.getItem("search-value"), {
+      element: "mark",
+    });
+  }
+});
+
+$(function () {
+  $('a[rel="lightbox"]').featherlight({
+    root: "section#body",
+  });
+});

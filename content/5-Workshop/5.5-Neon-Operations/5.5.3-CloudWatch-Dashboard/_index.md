@@ -181,21 +181,13 @@ CloudWatch Alarms monitor system metrics and automatically detect when resources
 
 2. Click **Create alarm**.
 
-![alt text](image-3.png)
-
 3. In the **Specify metric and conditions** step, click **Select metric** to choose the metric to monitor.
-
-![alt text](image-4.png)
 
 4. In the metric list, select:
    - **ECS**
    - **ClusterName, ServiceName**
 
-![alt text](image-5.png)
-
 5. Select the **CPUUtilization** metric for the ECS Service, then click **Select metric**.
-
-![alt text](image-6.png)
 
 6. Configure the alarm trigger conditions:
    - **Statistic:** Average
@@ -205,9 +197,6 @@ CloudWatch Alarms monitor system metrics and automatically detect when resources
    - **Threshold value:** 80
 
 CloudWatch will switch the Alarm to **ALARM** state when average CPU usage exceeds **80%** during the evaluation period.
-
-![alt text](image-7.png)
-![alt text](image-8.png)
 
 7. In the **Configure actions** step, choose the action to take when the Alarm triggers. You can send notifications via an **SNS Topic** or skip this if you only need to monitor the alarm state.
 
@@ -245,11 +234,7 @@ You can also add a description to make it easier to manage later.
 
 4. Complete the topic creation.
 
-![alt text](image-2.png)
-
 ![Figure 47.](/images/5-Workshop/5.5-Neon-Operations/image047.png)
-
-![alt text](image-1.png)
 
 5. Open the newly created Topic and click **Create subscription**.
 

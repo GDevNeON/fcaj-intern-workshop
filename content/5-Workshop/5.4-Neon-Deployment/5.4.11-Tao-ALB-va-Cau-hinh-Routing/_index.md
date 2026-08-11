@@ -19,8 +19,6 @@ pre : " <b> 5.4.11. </b> "
    - HTTPS `443` from `0.0.0.0/0`
 5. Keep the default outbound rule.
 
-![Figure 11. Create ALB security group](/images/5-Workshop/5.4-neon-deployment/placeholder-alb-sg.png)
-
 ### 5.4.11.2. Create Target Groups for Frontend and Backend
 
 - `TG-NeonFoodMap-FE` for frontend
@@ -42,8 +40,6 @@ Key configurations:
 ![](/images/5-Workshop/5.4-Neon-Deployment/image028.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image029.png)
 
-![Figure 12. Create target group](/images/5-Workshop/5.4-neon-deployment/placeholder-target-group.png)
-
 ### 5.4.11.3. Create Application Load Balancer
 
 1. Open EC2 Console → **Load Balancers**.
@@ -56,8 +52,6 @@ Key configurations:
 5. Select security group `alb-sg`.
 6. Configure the `HTTP:80` listener with a default route to the frontend target group.
 7. Create the load balancer.
-
-![Figure 13. Create Application Load Balancer](/images/5-Workshop/5.4-neon-deployment/placeholder-alb.png)
 
 ![](/images/5-Workshop/5.4-Neon-Deployment/image030.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image031.png)

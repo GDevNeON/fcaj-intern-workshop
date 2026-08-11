@@ -24,7 +24,4 @@ pre : " <b> 5.4.12. </b> "
 
 Kết quả:
 - Backend
-![alt text](image.png)
-
 - Frontend
-![alt text](image-1.png)

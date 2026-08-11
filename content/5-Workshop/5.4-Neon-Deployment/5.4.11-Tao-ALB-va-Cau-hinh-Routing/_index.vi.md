@@ -21,10 +21,6 @@ pre : " <b> 5.4.11. </b> "
    - HTTPS `443` từ `0.0.0.0/0`
 5. Giữ outbound rule mặc định.
 
-![Hình 11. Tạo ALB security group](/images/5-Workshop/5.4-neon-deployment/placeholder-alb-sg.png)
-
-
-
 #### 5.4.11.3. Tạo target group cho frontend và backend
 
 - `TG-NeonFoodMap-FE` cho frontend
@@ -46,8 +42,6 @@ Các cấu hình chính:
 ![](/images/5-Workshop/5.4-Neon-Deployment/image028.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image029.png)
 
-![Hình 12. Tạo target group](/images/5-Workshop/5.4-neon-deployment/placeholder-target-group.png)
-
 #### 5.4.11.4. Tạo Application Load Balancer
 
 1. Mở EC2 Console → Load Balancers.
@@ -60,8 +54,6 @@ Các cấu hình chính:
 5. Chọn security group `alb-sg`.
 6. Cấu hình listener `HTTP:80` và route mặc định tới frontend target group.
 7. Tạo load balancer.
-
-![Hình 13. Tạo Application Load Balancer](/images/5-Workshop/5.4-neon-deployment/placeholder-alb.png)
 
 ![](/images/5-Workshop/5.4-Neon-Deployment/image030.png)
 ![](/images/5-Workshop/5.4-Neon-Deployment/image031.png)

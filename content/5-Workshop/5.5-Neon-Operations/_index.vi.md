@@ -99,8 +99,6 @@ Sau khi distribution được tạo, cần vào tab Origins và chỉnh sửa or
 - API request path `/api/*` được route về backend target group qua ALB.
 - HTTPS được cung cấp qua CloudFront, trong khi backend bên trong mạng vẫn trao đổi qua HTTP nội bộ.
 
-![Hình 3. Cấu hình CloudFront Distribution](/images/5-Workshop/5.5-neon-operations/placeholder-cloudfront.png)
-
 ### 5.5.4. Tạo CloudWatch dashboard và các alarm quan trọng
 
 #### 5.5.4.1. Tạo dashboard
@@ -122,8 +120,6 @@ Sau khi distribution được tạo, cần vào tab Origins và chỉnh sửa or
 5. Đặt tên cảnh báo: `ALB-5XX-Error-Alarm`.
 6. Liên kết notification destination như SNS hoặc email.
 
-![Hình 4. Tạo CloudWatch Dashboard và Alarm](/images/5-Workshop/5.5-neon-operations/placeholder-cloudwatch.png)
-
 ### 5.5.5. Thiết lập log retention, log subscription và VPC Flow Logs
 
 1. Thiết lập log retention cho log group là `30 days`.
@@ -133,8 +129,6 @@ Sau khi distribution được tạo, cần vào tab Origins và chỉnh sửa or
 5. Bật VPC Flow Logs để giám sát lưu lượng mạng ở mức L3/L4.
 6. Tạo saved query trong CloudWatch Logs Insights để tái sử dụng khi xử lý sự cố.
 
-![Hình 5. Thiết lập logging và flow log](/images/5-Workshop/5.5-neon-operations/placeholder-logging.png)
-
 ### 5.5.6. Thiết lập Cost Monitoring và Budget Alerts
 
 1. Tạo AWS Budget với mức `15$/tháng`.
@@ -143,8 +137,6 @@ Sau khi distribution được tạo, cần vào tab Origins và chỉnh sửa or
 4. Tạo Cost Explorer reports.
 5. Tag các tài nguyên với Owner/Project.
 6. Xác nhận alert gửi tới email đã cấu hình.
-
-![Hình 6. Cấu hình Cost Monitoring](/images/5-Workshop/5.5-neon-operations/placeholder-cost-monitoring.png)
 
 ### 5.5.7. Chạy end-to-end testing trên luồng người dùng
 
@@ -164,8 +156,6 @@ Kết quả mong đợi:
 - Đăng nhập thành công
 - Hệ thống cập nhật trạng thái đơn hàng đúng như kỳ vọng
 
-![Hình 7. Test luồng đăng ký và đăng nhập](/images/5-Workshop/5.5-neon-operations/placeholder-auth-flow.png)
-
 #### 5.5.7.2. Test browse POIs và xem mô tả
 
 1. Truy cập trang chủ.
@@ -177,8 +167,6 @@ Kết quả mong đợi:
 - Dữ liệu điểm đến hiển thị đầy đủ
 - Không có lỗi kết nối API
 - Hình ảnh và mô tả tải bình thường
-
-![Hình 8. Test browse POIs](/images/5-Workshop/5.5-neon-operations/placeholder-poi-flow.png)
 
 #### 5.5.7.3. Test audio playback qua CloudFront
 
@@ -192,16 +180,12 @@ Kết quả mong đợi:
 - Không bị lag hoặc lỗi nội dung
 - Backend và CloudFront đáp ứng đúng file media
 
-![Hình 9. Test audio playback](/images/5-Workshop/5.5-neon-operations/placeholder-audio-flow.png)
-
 #### 5.5.7.4. Test tour booking flow
 
 1. Chọn một tour trên trang Tour.
 2. Bắt đầu hành trình.
 3. Di chuyển giữa các địa điểm trong tour.
 4. Kiểm tra audio và trạng thái hành trình cập nhật đúng.
-
-![Hình 10. Test tour booking flow](/images/5-Workshop/5.5-neon-operations/placeholder-tour-flow.png)
 
 #### 5.5.7.5. Test payment integration sandbox
 
@@ -210,16 +194,12 @@ Kết quả mong đợi:
 3. Điền thông tin và xác nhận.
 4. Kiểm tra trạng thái thanh toán và đơn hàng cập nhật thành công.
 
-![Hình 11. Test payment integration](/images/5-Workshop/5.5-neon-operations/placeholder-payment-flow.png)
-
 #### 5.5.7.6. Test error scenarios và mobile responsiveness
 
 1. Nhập dữ liệu không hợp lệ để kiểm tra thông báo lỗi.
 2. Mô phỏng timeout hoặc mất mạng.
 3. Kiểm tra ứng dụng hiển thị thông báo rõ ràng và không sập.
 4. Chạy kiểm tra responsive trên mobile và desktop.
-
-![Hình 12. Test lỗi và responsive UI](/images/5-Workshop/5.5-neon-operations/placeholder-error-ui.png)
 
 ### 5.5.8. Kết luận vận hành
 
@@ -242,5 +222,3 @@ Nếu không còn cần sử dụng tài nguyên, hãy thực hiện theo thứ 
 5. Xóa CloudWatch alarm/dashboard nếu cần
 6. Xóa log group không cần thiết
 7. Xóa ECR repositories nếu không còn dùng
-
-![Hình 13. Cleanup tài nguyên sau vận hành](/images/5-Workshop/5.5-neon-operations/placeholder-cleanup.png)

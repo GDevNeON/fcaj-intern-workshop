@@ -65,14 +65,9 @@ hoặc
 
 4. Giữ nguyên các thiết lập mặc định.
 
-![alt text](image.png)
-
-
 5. Nhấn **Create** để hoàn tất.
 
 6. Sau khi tạo thành công, Log Group sẽ xuất hiện trong danh sách.
-
-![alt text](image-1.png)
 
 ---
 
@@ -89,9 +84,6 @@ hoặc
 - **Log group:** `/ecs/neonfoodmap-backend`
 - **AWS Region:** `ap-southeast-1`
 - **Stream prefix:** `ecs`
-
-![alt text](image-3.png)
-
 
 5. Lưu Task Definition mới.
 6. Cập nhật ECS Service sử dụng Revision vừa tạo.

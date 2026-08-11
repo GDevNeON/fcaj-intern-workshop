@@ -13,13 +13,7 @@ Sau khi ECS task chạy xong, kiểm tra trạng thái target group.
 Các mục cần kiểm tra:
 
 - Target group frontend chuyển sang `Healthy`
-
-![alt text](image-1.png)
-
 - Target group backend chuyển sang `Healthy`
-
-![alt text](image.png)
-
 - ALB DNS có thể truy cập bằng browser
 ```
 http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/map
@@ -29,7 +23,5 @@ http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/map
 ```
 http://alb-neonfoodmap-406336237.ap-southeast-1.elb.amazonaws.com/api/
 ```
-
-![alt text](image-2.png)
 
 

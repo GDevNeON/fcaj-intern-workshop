@@ -63,13 +63,9 @@ or
 
 4. Keep the default settings.
 
-![alt text](image.png)
-
 5. Click **Create** to finish.
 
 6. After creation, the Log Group will appear in the list.
-
-![alt text](image-1.png)
 
 ---
 
@@ -86,8 +82,6 @@ To allow ECS containers to write logs directly to CloudWatch, configure the **aw
 - **Log group:** `/ecs/neonfoodmap-backend`
 - **AWS Region:** `ap-southeast-1`
 - **Stream prefix:** `ecs`
-
-![alt text](image-3.png)
 
 5. Save the new Task Definition.
 6. Update the ECS Service to use the newly created Revision.
