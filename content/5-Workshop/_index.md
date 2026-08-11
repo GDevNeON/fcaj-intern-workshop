@@ -16,8 +16,7 @@ The workshop is divided into four main phases:
 
 - **Infrastructure**: Set up the foundational AWS network and services (VPC, RDS, S3, IAM)
 - **Deployment**: Build a CI/CD pipeline using GitHub Actions and deploy the application to ECS Fargate
-- **Operations**: Configure auto-scaling, CDN distribution, monitoring, cost alerts, and end-to-end testing
-- **Image Assets**: Reference list of all screenshots used throughout the workshop
+- **Operations & Cleanup**: Configure auto-scaling, CDN distribution, monitoring, end-to-end testing, and AWS resource cleanup
 
 ### Architecture Summary
 
@@ -38,4 +37,4 @@ The system is structured into five layers:
 3. [Design and Build NeonFoodMap Infrastructure on AWS](5.3-Neon-Infrastructure/)
 4. [NeonFoodMap Deployment on AWS](5.4-Neon-Deployment/)
 5. [NeonFoodMap Operations and Monitoring](5.5-Neon-Operations/)
-6. [Image Assets](5.6-Neon-Image/)
+6. [Clean up AWS Resources](5.6-Cleanup/)

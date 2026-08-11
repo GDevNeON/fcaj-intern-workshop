@@ -16,8 +16,7 @@ Workshop được chia thành bốn giai đoạn chính:
 
 - **Hạ tầng**: Thiết lập mạng và các dịch vụ AWS nền tảng (VPC, RDS, S3, IAM)
 - **Triển khai**: Xây dựng pipeline CI/CD bằng GitHub Actions và triển khai ứng dụng lên ECS Fargate
-- **Vận hành**: Cấu hình auto-scaling, phân phối CDN, giám sát, cảnh báo chi phí và kiểm thử end-to-end
-- **Hình ảnh minh họa**: Danh sách tham chiếu toàn bộ ảnh chụp màn hình sử dụng trong workshop
+- **Vận hành & Dọn dẹp**: Cấu hình auto-scaling, phân phối CDN, giám sát, kiểm thử end-to-end và dọn dẹp tài nguyên AWS tránh phát sinh chi phí
 
 ### Tổng quan kiến trúc
 
@@ -38,4 +37,4 @@ Hệ thống được tổ chức theo năm lớp chính:
 3. [Thiết kế và xây dựng hạ tầng NeonFoodMap trên AWS](5.3-Neon-Infrastructure/)
 4. [Triển khai NeonFoodMap trên AWS](5.4-Neon-Deployment/)
 5. [Kiểm thử, vận hành và triển khai liên tục](5.5-Neon-Operations/)
-6. [Hình ảnh minh họa](5.6-Neon-Image/)
+6. [Dọn dẹp tài nguyên AWS](5.6-Cleanup/)
